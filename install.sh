@@ -23,8 +23,7 @@ echo
 echo "--- Creating and checking out local branch (development) ---"
 pushd $HOME/.Dotfiles
 git checkout master
-git branch development
-git checkout development
+git checkout -b development -t master
 echo
 
 echo "--- Done ---"
