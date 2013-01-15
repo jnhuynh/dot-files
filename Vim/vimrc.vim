@@ -58,6 +58,7 @@
 " Custom Mapping {
   nnoremap <silent> Ω :nohl<CR>
   nnoremap <silent> ∂ :NERDTreeToggle<CR>
+  vnoremap ç :w !pbcopy<CR><CR>
 " }
 
 " Ruby Abbreviations {
