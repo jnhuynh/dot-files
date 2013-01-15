@@ -12,20 +12,20 @@
   set viewoptions=folds,options,cursor,unix,slash " better unix / windows compatibility
   "set virtualedit=onemore " allow for cursor beyond last character
   call pathogen#infect()
-  autocmd vimenter * if !argc() | NERDTree | endif " open NERDTree when vim opens.
-  autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTreeType == "primary") | q | endif " class vim if NERDTree is the last buffer.
+  " autocmd vimenter * if !argc() | NERDTree | endif " open NERDTree when vim opens.
+  " autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTreeType == "primary") | q | endif " class vim if NERDTree is the last buffer.
 " }
 
 " vim UI {
   " colorscheme koehler
   " set column hilight color
-  " hi CursorColumn cterm=none ctermbg=black guibg=black
+  hi CursorColumn cterm=none ctermbg=black guibg=black
   " set line hilight color
-  " hi CursorLine cterm=none ctermbg=black guibg=black
+  hi CursorLine cterm=none ctermbg=black guibg=black
   set background=dark
   " set colorcolumn=80
-  " set cursorcolumn " hilight the current column
-  " set cursorline " hilight the current line
+  set cursorcolumn " hilight the current column
+  set cursorline " hilight the current line
   " set term=linux
   set list " we do this to show tabs
   "set listchars=tab:>-,trail:. " show tabs and trailing spaces
@@ -42,12 +42,12 @@
 
 " Text Formatting {
   autocmd FileType make setlocal noexpandtab " prevent tab expansion when working on Makefiles
-  filetype plugin on " enable file type detection. Used by nerdcommenter.
+  " filetype plugin on " enable file type detection. Used by nerdcommenter.
   set autoindent " use indentation of previous line
   " set comments=sl:/*,mb:\ *,elx:\ */:# " intelligent comments
   set expandtab  " expand tabs to spaces
   set iskeyword-=\_
-  let NERDSpaceDelims=1 " https://github.com/scrooloose/nerdcommenter/blob/master/doc/NERD_commenter.txt
+  " let NERDSpaceDelims=1 " https://github.com/scrooloose/nerdcommenter/blob/master/doc/NERD_commenter.txt
   set shiftwidth=2 " indent also with 4 spaces
   " set smartindent " use intelligent indentation for C
   set tabstop=2 " tab width is 2 spaces
