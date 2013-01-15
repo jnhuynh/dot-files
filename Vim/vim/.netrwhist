@@ -1,0 +1,11 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =9
+let g:netrw_dirhist_1='/Users/jnhuynh/Dropbox/Documents/Courses/Fall2012/CS601-Web Application Development/Assignments/final/old/restaurant/app/models'
+let g:netrw_dirhist_2='/Users/jnhuynh/Dropbox/Documents/Courses/Fall2012/CS601-Web Application Development/Assignments/final/restaurant/app/views'
+let g:netrw_dirhist_3='/Users/jnhuynh/Dropbox/Documents/Courses/Fall2012/CS601-Web Application Development/Assignments/final/restaurant/app/views/products'
+let g:netrw_dirhist_4='/Users/jnhuynh/Dropbox/Documents/Courses/Fall2012/CS601-Web Application Development/Assignments/final/restaurant/app/views/store'
+let g:netrw_dirhist_5='/Users/jhuynh/Documents/vmm/sites/pcs/app/models'
+let g:netrw_dirhist_6='/Users/jhuynh/Documents/vmm/vendor/plugins/acts_as_syncable/lib/active_record/acts/syncable'
+let g:netrw_dirhist_7='/Users/jhuynh/Documents/clean_vmm/vmm/config'
+let g:netrw_dirhist_8='/Users/jhuynh/Documents/clean_vmm/vmm/config/environments'
+let g:netrw_dirhist_9='/Users/jhuynh/Documents/rbm/vmm'

@@ -1,0 +1,47 @@
+[color]
+  ui = auto
+[color "branch"]
+  current = yellow reverse
+  local = yellow
+  remote = green
+[color "diff"]
+  meta = yellow bold
+  frag = magenta bold
+  old = red bold
+  new = green bold
+[color "status"]
+  added = yellow
+  changed = green
+  untracked = cyan
+[alias]
+  br  = branch
+  co  = checkout
+  com = commit
+  df  = diff
+  dft = difftool
+  dfh = difftool HEAD
+  lg  = log --reverse --pretty=format:\"%H - %an, %ar : %s\" -9
+  pl  = pull --rebase
+  ph  = push
+  st  = status
+  sh  = --pretty="format:" --name-only
+  re  = rebase -i
+[user]
+  name = John Huynh
+  email = j.n.huynh@me.com
+[difftool "Kaleidoscope"]
+  cmd = ksdiff --partial-changeset --relative-path \"$MERGED\" -- \"$LOCAL\" \"$REMOTE\"
+[diff]
+  tool = Kaleidoscope
+[difftool]
+  prompt = false
+[mergetool "Kaleidoscope"]
+  cmd = ksdiff --merge --output \"$MERGED\" --base \"$BASE\" -- \"$LOCAL\" --snapshot \"$REMOTE\" --snapshot
+  trustExitCode = true
+[mergetool]
+  prompt = false
+[merge]
+  tool = Kaleidoscope
+[core]
+  editor = vim
+  excludesfile = /Users/jhuynh/.gitignore_global
