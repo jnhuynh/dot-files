@@ -42,12 +42,12 @@
 
 " Text Formatting {
   autocmd FileType make setlocal noexpandtab " prevent tab expansion when working on Makefiles
-  " filetype plugin on " enable file type detection. Used by nerdcommenter.
+  filetype plugin on " enable file type detection. Used by nerdcommenter.
+  let NERDSpaceDelims=1 " https://github.com/scrooloose/nerdcommenter/blob/master/doc/NERD_commenter.txt
   set autoindent " use indentation of previous line
   " set comments=sl:/*,mb:\ *,elx:\ */:# " intelligent comments
   set expandtab  " expand tabs to spaces
   set iskeyword-=\_
-  " let NERDSpaceDelims=1 " https://github.com/scrooloose/nerdcommenter/blob/master/doc/NERD_commenter.txt
   set shiftwidth=2 " indent also with 4 spaces
   " set smartindent " use intelligent indentation for C
   set tabstop=2 " tab width is 2 spaces
