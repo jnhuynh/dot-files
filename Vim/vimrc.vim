@@ -54,6 +54,10 @@
   set textwidth=80
 " }
 
+" Custom Mapping {
+  nmap Ω :nohl<CR>
+" }
+
 " Ruby Abbreviations {
 " Multi-line abbreivations help:
 "   http://vim.wikia.com/wiki/Multi-line_abbreviations
