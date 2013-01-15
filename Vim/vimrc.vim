@@ -13,7 +13,8 @@
   "set virtualedit=onemore " allow for cursor beyond last character
   call pathogen#infect()
   " autocmd vimenter * if !argc() | NERDTree | endif " open NERDTree when vim opens.
-  " autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTreeType == "primary") | q | endif " class vim if NERDTree is the last buffer.
+  " close vim if NERDTree is the last buffer.
+  autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTreeType == "primary") | q | endif
 " }
 
 " vim UI {
@@ -55,7 +56,8 @@
 " }
 
 " Custom Mapping {
-  nmap Ω :nohl<CR>
+  nnoremap <silent> Ω :nohl<CR>
+  nnoremap <silent> ∂ :NERDTreeToggle<CR>
 " }
 
 " Ruby Abbreviations {
