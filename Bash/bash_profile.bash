@@ -12,6 +12,8 @@
 # Add utility functions
 . ~/.DotFiles/Bash/utils.bash
 
+# Add work related utils, not available in repo.
+. ~/.profile
 
 # Check if the rvm initialization script exists and sources it to set necessary 
 # environment variables.
