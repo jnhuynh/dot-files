@@ -12,6 +12,10 @@
 # Add utility functions
 . ~/.DotFiles/Bash/utils.bash
 
+# Git completion
+# http://code-worrier.com/blog/autocomplete-git/
+. ~/.DotFiles/Bash/Scripts/git_completion.bash
+
 # Add work related utils, not available in repo.
 . ~/.profile
 
