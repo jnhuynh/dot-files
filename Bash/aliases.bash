@@ -26,7 +26,7 @@ alias sshGator="ssh -p 2222 jnhuynh@74.53.180.5"
 alias v="vim" #alias v="mvim"
 
 ##### Git ######################################################################
-alias g="git"
+# alias g="git" # Disable to promote use of $git autocompletion
 alias glgs="glgs.sh"
 
 ##### Rail, Ruby, Bundle, RVM ##################################################
