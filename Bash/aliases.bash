@@ -28,6 +28,7 @@ alias v="vim" #alias v="mvim"
 ##### Git ######################################################################
 # alias g="git" # Disable to promote use of $git autocompletion
 alias glgs="glgs.sh"
+alias gsts="gsts.sh"
 
 ##### Rail, Ruby, Bundle, RVM ##################################################
 alias b="bundle"

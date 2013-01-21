@@ -6,7 +6,7 @@ echo
 
 # awk is used here to print the entire line to stdout since
 # git log outputs to Vim, which is it's default page.
-git log --reverse --pretty=format:"%an, %ar : %s%n%H" -5 |
+git log --reverse --pretty=format:"%an, %ar : %s%n%H" -5 $1 |
 awk '{ print }' |
 while read log; do
   echo REV:
