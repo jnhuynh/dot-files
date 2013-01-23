@@ -18,11 +18,11 @@
 " }
 
 " vim UI {
-  " colorscheme koehler
+  colorscheme ir_black
   " set column hilight color
-  hi CursorColumn cterm=none ctermbg=black guibg=black
+  hi CursorColumn cterm=none ctermbg=darkgray guibg=darkgray
   " set line hilight color
-  hi CursorLine cterm=none ctermbg=black guibg=black
+  hi CursorLine cterm=none ctermbg=darkgray guibg=darkgray
   set background=dark
   " set colorcolumn=80
   set cursorcolumn " hilight the current column
@@ -57,7 +57,7 @@
 
 " Custom Mapping {
   nnoremap <silent> Ω :nohl<CR>
-  nnoremap <silent> † :NERDTreeToggle<CR>
+  nnoremap <silent> π :NERDTreeToggle<CR>
   vnoremap ç :w !pbcopy<CR><CR>
 " }
 
