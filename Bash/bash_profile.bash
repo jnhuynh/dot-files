@@ -45,7 +45,7 @@ parse_git_branch() {
 }
 
 prompt() {
-    prompt="${VIOLET}\h${NORMAL} |  \w${GREEN}$(parse_git_branch)${NORMAL}\n$ "
+    prompt="${BLUE}\h${NORMAL} |  \w${YELLOW}$(parse_git_branch)${NORMAL}\n$ "
     PS1=$prompt
 }
 
