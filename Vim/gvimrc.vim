@@ -1,6 +1,6 @@
 if has('gui_running')
 " UI {
-  colorscheme ir_black
+  colorscheme codeschool
   set guifont=Menlo:h14
   " http://choorucode.wordpress.com/2011/07/29/vim-set-color-of-colorcolumn/
   hi colorcolumn guibg=#444444
