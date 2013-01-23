@@ -56,8 +56,8 @@
 " }
 
 " Custom Mapping {
-  nnoremap <silent> Ω :nohl<CR>
-  nnoremap <silent> ∂ :NERDTreeToggle<CR>
+  nnoremap <silent> <S-Z> :nohl<CR>
+  nnoremap <silent> <S-D> :NERDTreeToggle<CR>
   vnoremap ç :w !pbcopy<CR><CR>
 " }
 
