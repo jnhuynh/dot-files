@@ -17,15 +17,13 @@
   br  = branch
   co  = checkout
   com = commit
-  df  = diff
-  dft = difftool
-  dfh = difftool HEAD
-  lg  = log --reverse --pretty=format:\"%H - %an, %ar : %s\" -9
+  df  = difftool
+  lg  = log --reverse --pretty=format:\"%H - %an, %ar : %s\"
   pl  = pull --rebase
   ph  = push
   st  = status
-  sh  = --pretty="format:" --name-only
-  re  = rebase -i
+  sh  = show --pretty="format:" --name-only
+  rb  = rebase -i
 [user]
   name = John Huynh
   email = j.n.huynh@me.com

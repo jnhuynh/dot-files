@@ -30,6 +30,7 @@ alias v="mvim"
 # alias g="git" # Disable to promote use of $git autocompletion
 alias glgs="glgs.sh"
 alias gsts="gsts.sh"
+alias gdfm="gdfm.sh"
 
 ##### Rail, Ruby, Bundle, RVM ##################################################
 alias b="bundle"
