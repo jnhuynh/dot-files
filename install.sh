@@ -20,11 +20,11 @@ echo "Creating a symbolic link for .gitignore_global"
 ln -Ffhs $HOME/.DotFiles/Git/gitignore_global.git $HOME/.gitignore_global
 echo
 
-echo "--- Creating and checking out local branch (development) ---"
-pushd $HOME/.Dotfiles
-git checkout master
-git checkout -b development -t master
-echo
+# echo "--- Creating and checking out local branch (development) ---"
+# pushd $HOME/.Dotfiles
+# git checkout master
+# git checkout -b development -t master
+# echo
 
 echo "--- Done ---"
 echo
