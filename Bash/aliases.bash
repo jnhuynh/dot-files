@@ -10,6 +10,7 @@ alias blog="cd ~/Documents/Blog/DIRhuynh"
 alias c="clear"
 alias courses="cd ~/Documents/Courses"
 alias dirs="dirs -v"
+alias tstp="date +'%m%d%y_%H%M%S'"
 alias egrep="env | grep"
 alias grep="grep --color=always"
 alias hgrep="history | grep"
@@ -28,6 +29,7 @@ alias v="mvim"
 
 ##### Git ######################################################################
 # alias g="git" # Disable to promote use of $git autocompletion
+alias cbr="git rev-parse --abbrev-ref HEAD"
 alias glgs="glgs.sh"
 alias gsts="gsts.sh"
 alias gdfm="gdfm.sh"
