@@ -9,6 +9,8 @@ if has('gui_running')
   set cursorcolumn
   set cursorline
   set vb " Disables audio bell.
+  " Fixes weird column styling with gitgutter
+  highlight clear SignColumn
 " }
 "
 " Numbered tab navigation {
