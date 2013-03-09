@@ -42,4 +42,4 @@
   tool = Kaleidoscope
 [core]
   editor = vim
-  excludesfile = /Users/jhuynh/.gitignore_global
+	excludesfile = ~/.gitignore_global
