@@ -43,3 +43,5 @@
 [core]
   editor = vim
 	excludesfile = ~/.gitignore_global
+[push]
+	default = current
