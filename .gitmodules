@@ -1,0 +1,15 @@
+[submodule "Vim/vim/bundle/ctrlp.vim"]
+	path = Vim/vim/bundle/ctrlp.vim
+	url = git@github.com:kien/ctrlp.vim.git
+[submodule "Vim/vim/bundle/vim-fugitive"]
+	path = Vim/vim/bundle/vim-fugitive
+	url = git@github.com:tpope/vim-fugitive.git
+[submodule "Vim/vim/bundle/nerdtree"]
+	path = Vim/vim/bundle/nerdtree
+	url = git@github.com:scrooloose/nerdtree.git
+[submodule "Vim/vim/bundle/nerdcommenter"]
+	path = Vim/vim/bundle/nerdcommenter
+	url = git@github.com:scrooloose/nerdcommenter.git
+[submodule "Vim/vim/bundle/vim-gitgutter"]
+	path = Vim/vim/bundle/vim-gitgutter
+	url = git@github.com:airblade/vim-gitgutter.git
