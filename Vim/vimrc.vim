@@ -52,7 +52,7 @@
   set shiftwidth=2 " indent also with 4 spaces
   " set smartindent " use intelligent indentation for C
   set tabstop=2 " tab width is 2 spaces
-  set textwidth=80
+  " set textwidth=80
 " }
 
 " Custom Mapping {
