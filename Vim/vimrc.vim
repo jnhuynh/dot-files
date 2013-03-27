@@ -36,7 +36,7 @@
   set ruler " show column number
   set showmatch " highlight matching braces
   set title " show title in console title bar
-  syntax enable " If the terminal supports colors, then turn on syntax highligting.
+  " syntax enable " If the terminal supports colors, then turn on syntax highligting.
 " }
 
   autocmd BufNewFile,BufRead *.json set ft=javascript " sets json files to use javascript hi lighting
