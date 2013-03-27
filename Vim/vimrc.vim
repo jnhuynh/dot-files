@@ -55,12 +55,6 @@
   set textwidth=80
 " }
 
-" Syntastic Configs {
-  " On by default, turn it off for html
-  let g:syntastic_mode_map = { 'mode': 'active',
-    \ 'active_filetypes': [],
-    \ 'passive_filetypes': ['html'] }
-" }
 " Custom Mapping {
   nnoremap <silent> Ω :nohl<CR>
   nnoremap <silent> π :NERDTreeToggle<CR>
