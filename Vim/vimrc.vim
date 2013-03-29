@@ -59,6 +59,9 @@
   nnoremap <silent> Ω :nohl<CR>
   nnoremap <silent> π :NERDTreeToggle<CR>
   vnoremap ç :w !pbcopy<CR><CR>
+  " Tabular line up of common seperators.
+  vnoremap t: :Tab /:\zs<CR>
+  vnoremap t= :Tab /=<CR>
 " }
 
 " Numbered tab navigation {
