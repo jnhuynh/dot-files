@@ -62,6 +62,7 @@
   " Tabular line up of common seperators.
   vnoremap t: :Tab /:\zs<CR>
   vnoremap t= :Tab /=<CR>
+  vnoremap t> :Tab /=><CR>
 " }
 
 " Numbered tab navigation {
