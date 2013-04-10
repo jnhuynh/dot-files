@@ -32,21 +32,20 @@ alias v="mvim"
 alias cbr="git rev-parse --abbrev-ref HEAD"
 alias glgs="glgs.sh"
 alias gsts="gsts.sh"
-alias gdfm="gdfm.sh"
 
 ##### Rail, Ruby, Bundle, RVM ##################################################
 alias b="bundle"
 alias be="bundle exec"
 alias bi="bundle install"
 alias bu="bundle update"
-alias papp="cd ~/Documents/$PROJECT/app" # $PROJECT is defined in the environment file
-alias pctrl="cd ~/Documents/$PROJECT/app/controllers"
-alias pmodl="cd ~/Documents/$PROJECT/app/models"
-alias ptest="cd ~/Documents/$PROJECT/test"
-alias proot="cd ~/Documents/$PROJECT"
-alias pspec="cd ~/Documents/$PROJECT/spec"
-alias psite="cd ~/Documents/$PROJECT/sites"
-alias pview="cd ~/Documents/$PROJECT/app/views"
+alias papp="cd $PROJECT/app" # $PROJECT is defined in the environment file
+alias pctrl="cd $PROJECT/app/controllers"
+alias pmodl="cd $PROJECT/app/models"
+alias ptest="cd $PROJECT/test"
+alias proot="cd $PROJECT"
+alias pspec="cd $PROJECT/spec"
+alias psite="cd $PROJECT/sites"
+alias pview="cd $PROJECT/app/views"
 
 ##### SOURCE CODE SEARCH #######################################################
 alias cfind="find . -type f -name "*.c""
