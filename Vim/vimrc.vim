@@ -40,7 +40,6 @@
 " }
 
   autocmd BufNewFile,BufRead *.json set ft=javascript " sets json files to use javascript hi lighting
-  autocmd BufNewFile,BufRead *.md setlocal textwidth=80 " ses Markdown files to have hard text wrap
 
 " Text Formatting {
   autocmd FileType make setlocal noexpandtab " prevent tab expansion when working on Makefiles
