@@ -49,4 +49,10 @@ prompt() {
     PS1=$prompt
 }
 
+# https://coderwall.com/p/oqtj8w
+bind '"\e[A": history-search-backward' #up-arrow through history
+bind '"\e[B": history-search-forward' #down-arrow through history
+set show-all-if-ambiguous on
+set completion-ignore-case o
+
 PROMPT_COMMAND=prompt
