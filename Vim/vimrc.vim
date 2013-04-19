@@ -59,6 +59,8 @@
 " Custom Mapping {
   nnoremap <silent> Ω :nohl<CR>
   nnoremap <silent> π :NERDTreeToggle<CR>
+  " Wraps the paragraph
+  nnoremap <silent> ∑ <S-{><S-V><S-}>gq
   vnoremap ç :w !pbcopy<CR><CR>
   " Tabular line up of common seperators.
   vnoremap t: :Tab /:\zs<CR>
@@ -68,7 +70,7 @@
 
 " Numbered tab navigation {
 " (http://ilessendata.blogspot.com/2011/05/vimrc-switching-tabs-in-macvim.html)
-" These are all ALT-<NUM> mappings.
+" These are all ALT-<NUM> mappings. Useful for when I used CLI Vim.
   noremap ¡ :tabn 1<CR>
   noremap ™ :tabn 2<CR>
   noremap £ :tabn 3<CR>
