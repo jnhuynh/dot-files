@@ -35,12 +35,15 @@
   set hlsearch  " highlight search results
   set ruler " show column number
   set showmatch " highlight matching braces
-  set title " show title in console title bar
+  " set title " show title in console title bar
+  set laststatus=2 " show the status bar on the bottom
   syntax enable " If the terminal supports colors, then turn on syntax highligting.
 " }
 
-  autocmd BufNewFile,BufRead *.json set ft=javascript " sets json files to use javascript hi lighting
-  autocmd BufNewFile,BufRead *.md setlocal textwidth=80 " ses Markdown files to have hard text wrap
+  " sets json files to use javascript hi lighting
+  autocmd BufNewFile,BufRead *.json set ft=javascript
+  " set Markdown files to have hard text wrap
+  autocmd BufNewFile,BufRead *.md,*.txt setlocal textwidth=80
 
 " Text Formatting {
   autocmd FileType make setlocal noexpandtab " prevent tab expansion when working on Makefiles
