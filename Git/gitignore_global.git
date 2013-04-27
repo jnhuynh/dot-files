@@ -27,6 +27,7 @@ _site
 *.log
 *.sql
 *.sqlite
+database.yml
 
 # Temporary files #
 ###################
