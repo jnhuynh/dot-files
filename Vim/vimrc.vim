@@ -59,6 +59,13 @@
   " set textwidth=80
 " }
 
+" ConqueTerm {
+" https://code.google.com/p/conque/wiki/Usage
+  let g:ConqueTerm_Color = 2
+  let g:ConqueTerm_ReadUnfocused = 1
+  nnoremap Ç :ConqueTermTab bash<CR>
+" }
+
 " Custom Mapping {
   nnoremap <silent> Ω :nohl<CR>
   nnoremap <silent> π :NERDTreeToggle<CR>
