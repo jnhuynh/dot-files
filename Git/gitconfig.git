@@ -18,6 +18,7 @@
   co  = checkout
   com = commit
   df  = difftool
+  fh  = fetch --prune
   lg  = log --reverse --pretty=format:\"%H - %an, %ar : %s\"
   pl  = pull --rebase
   ph  = push
