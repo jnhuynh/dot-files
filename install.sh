@@ -13,11 +13,20 @@ echo "Creating a symbolic link for .vim"
 ln -Ffhs $HOME/.DotFiles/Vim/vim $HOME/.vim
 echo
 
-echo "--- Setting up Git ---"
+echo "--- setting up Vim plugins ---"
+echo ""
+cd $HOME/.DotFiles/
+echo "Downloading plugins"
+git submodule init
+git submodule update
+cd $HOME
+echo
+
+echo "--- setting up Git ---"
 echo "Creating a symbolic link for .gitconfig"
-ln -Ffhs $HOME/.DotFiles/Git/gitconfig.git $HOME/.gitconfig
+ln -ffhs $HOME/.DotFiles/git/gitconfig.git $HOME/.gitconfig
 echo "Creating a symbolic link for .gitignore_global"
-ln -Ffhs $HOME/.DotFiles/Git/gitignore_global.git $HOME/.gitignore_global
+ln -ffhs $HOME/.DotFiles/git/gitignore_global.git $HOME/.gitignore_global
 echo
 
 # echo "--- Creating and checking out local branch (development) ---"
