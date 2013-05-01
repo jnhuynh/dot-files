@@ -71,13 +71,20 @@
 " Custom Mapping {
   nnoremap <silent> Ω :nohl<CR>
   nnoremap <silent> π :NERDTreeToggle<CR>
-  " Wraps the paragraph
-  nnoremap <silent> ∑ <S-{><S-V><S-}>gq
-  vnoremap ç :w !pbcopy<CR><CR>
-  " Tabular line up of common seperators.
-  vnoremap t: :Tab /:\zs<CR>
-  vnoremap t= :Tab /=<CR>
-  vnoremap t> :Tab /=><CR>
+
+  " Markdown Related {
+    " Wraps the paragraph
+    nnoremap <silent> ∑ <S-{><S-V><S-}>gq
+    noremap ¬ <ESC>lbi[<ESC>ea][]<ESC>i
+    vnoremap ç :w !pbcopy<CR><CR>
+  " }
+
+  " Tabular Related {
+    " Line up common seperators.
+    vnoremap t: :Tab /:\zs<CR>
+    vnoremap t= :Tab /=<CR>
+    vnoremap t> :Tab /=><CR>
+  " }
 " }
 
 " Numbered tab navigation {
