@@ -24,7 +24,11 @@
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"
 PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
 
-rvm use
+if [ "$HOST" == "dhcp-4-104.hq.rbm.local" ]; then
+  rvm use ree
+else
+  rvm use ruby
+fi
 
 # Prevents redirected files from overwriting the predecessor
 set -o noclobber
