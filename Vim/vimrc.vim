@@ -11,10 +11,8 @@
   set nocompatible " stops vim from copying vi's bugs
   set viewoptions=folds,options,cursor,unix,slash " better unix / windows compatibility
   "set virtualedit=onemore " allow for cursor beyond last character
+
   call pathogen#infect()
-  " autocmd vimenter * if !argc() | NERDTree | endif " open NERDTree when vim opens.
-  " close vim if NERDTree is the last buffer.
-  autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTreeType == "primary") | q | endif
 " }
 
 " vim UI {
@@ -23,21 +21,39 @@
   hi CursorColumn cterm=none ctermbg=darkgray guibg=darkgray
   " set line hilight color
   hi CursorLine cterm=none ctermbg=darkgray guibg=darkgray
-  set background=dark
   " set colorcolumn=80
   set cursorcolumn " hilight the current column
   set cursorline " hilight the current line
+
+  set background=dark
   " set term=linux
+  "
   set list " we do this to show tabs
   "set listchars=tab:>-,trail:. " show tabs and trailing spaces
   set lcs=tab:»_,trail:·
+
   set number " vim will display line numbers
-  set hlsearch  " highlight search results
   set ruler " show column number
+
+  set hlsearch  " highlight search results
   set showmatch " highlight matching braces
   " set title " show title in console title bar
   set laststatus=2 " show the status bar on the bottom
   syntax enable " If the terminal supports colors, then turn on syntax highligting.
+
+  " Syntastic Settings {
+      set statusline+=%#warningmsg#
+      set statusline+=%{SyntasticStatuslineFlag()}
+      set statusline+=%*
+  " }
+
+  " NERDTree configuration {
+    " autocmd vimenter * if !argc() | NERDTree | endif " open NERDTree when vim opens.
+    " close vim if NERDTree is the last buffer.
+    autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTreeType == "primary") | q | endif
+    let NERDSpaceDelims=1 " https://github.com/scrooloose/nerdcommenter/blob/master/doc/NERD_commenter.txt
+    nnoremap <silent> π :NERDTreeToggle<CR>
+  " }
 " }
 
   " sets json files to use javascript hi lighting
@@ -47,15 +63,16 @@
 
 " Text Formatting {
   autocmd FileType make setlocal noexpandtab " prevent tab expansion when working on Makefiles
-  filetype plugin on " enable file type detection. Used by nerdcommenter.
-  let NERDSpaceDelims=1 " https://github.com/scrooloose/nerdcommenter/blob/master/doc/NERD_commenter.txt
-  set autoindent " use indentation of previous line
-  " set comments=sl:/*,mb:\ *,elx:\ */:# " intelligent comments
   set expandtab  " expand tabs to spaces
+  filetype plugin on " enable file type detection. Used by nerdcommenter.
+
   set iskeyword-=\_
+
+  set autoindent " use indentation of previous line
   set shiftwidth=2 " indent also with 4 spaces
-  " set smartindent " use intelligent indentation for C
   set tabstop=2 " tab width is 2 spaces
+  " set comments=sl:/*,mb:\ *,elx:\ */:# " intelligent comments
+  " set smartindent " use intelligent indentation for C
   " set textwidth=80
 " }
 
@@ -70,7 +87,6 @@
 
 " Custom Mapping {
   nnoremap <silent> Ω :nohl<CR>
-  nnoremap <silent> π :NERDTreeToggle<CR>
 
   " Markdown Related {
     " Wraps the paragraph
@@ -88,6 +104,8 @@
 " }
 
 " Numbered tab navigation {
+  cab t tabf
+
 " (http://ilessendata.blogspot.com/2011/05/vimrc-switching-tabs-in-macvim.html)
 " These are all ALT-<NUM> mappings. Useful for when I used CLI Vim.
   noremap ¡ :tabn 1<CR>
@@ -114,8 +132,6 @@
     let c = nr2char(getchar(0))
     return (c =~ a:pat) ? '' : c
   endfunc
-
-cab t tabf
 
 " iab rzde def<CR>end<UP><END>
 " Trailing space is added to make proper indentation using the defaulted added space insert by iab.

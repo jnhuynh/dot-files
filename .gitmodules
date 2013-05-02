@@ -25,3 +25,6 @@
 [submodule "Vim/vim/bundle/vim-rails"]
 	path = Vim/vim/bundle/vim-rails
 	url = git@github.com:tpope/vim-rails.git
+[submodule "Vim/vim/bundle/syntastic"]
+	path = Vim/vim/bundle/syntastic
+	url = https://github.com/scrooloose/syntastic.git
