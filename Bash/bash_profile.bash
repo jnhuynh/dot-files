@@ -25,7 +25,7 @@
 PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
 
 if [[ "$HOST" == "dhcp-"*"rbm.local" ]]; then
-  rvm use ree
+  rvm use ree@rbm-rvm-development
 else
   rvm use ruby
 fi
