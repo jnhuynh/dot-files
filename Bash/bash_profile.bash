@@ -24,7 +24,7 @@
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"
 PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
 
-if [ "$HOST" == "dhcp-4-104.hq.rbm.local" ]; then
+if [[ "$HOST" == "dhcp-"*"rbm.local" ]]; then
   rvm use ree
 else
   rvm use ruby
