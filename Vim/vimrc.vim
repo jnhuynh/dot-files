@@ -43,17 +43,20 @@
   " Status line {
     " http://got-ravings.blogspot.com/2008/08/vim-pr0n-making-statuslines-that-own.html
     set laststatus=2 " show the status bar on the bottom
-    set statusline=%t       "tail of the filename
-    " set statusline+=[%{strlen(&fenc)?&fenc:'none'}, "file encoding
-    " set statusline+=%{&ff}] "file format
-    " set statusline+=%h      "help file flag
-    " set statusline+=%m      "modified flag
-    set statusline+=%r      "read only flag
-    set statusline+=%y      "filetype
-    set statusline+=%=      "left/right separator
-    set statusline+=%c,     "cursor column
-    set statusline+=%l/%L   "cursor line/total lines
-    set statusline+=\ %P    "percent through file
+
+    " set statusline+=[%{strlen(&fenc)?&fenc:'none'}, " file encoding
+    " set statusline+=%{&ff}] " file format
+    " set statusline+=%h      " help file flag
+    " set statusline+=%m      " modified flag
+    " set statusline=%t             " tail of the filename
+    set statusline=%f               " relative file path
+    set statusline+=%r              " read only flag
+    set statusline+=%y              " filetype
+    set statusline+=\ \ \ [A=\%03.3b/H=\%02.2B] " ASCII / Hexadecimal value of char
+    set statusline+=%=              " left/right separator
+    set statusline+=%c,             " cursor column
+    set statusline+=%l/%L           " cursor line/total lines
+    set statusline+=\ %P            " percent through file
   " }
 
   " Syntastic Settings {
