@@ -14,7 +14,7 @@
   changed = green
   untracked = cyan
 [alias]
-  br  = branch
+  br  = branch -vv
   co  = checkout
   com = commit
   df  = difftool
