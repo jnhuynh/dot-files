@@ -96,11 +96,11 @@
 
 " ConqueTerm {
 " https://code.google.com/p/conque/wiki/Usage
-  let g:ConqueTerm_Color = 2
-  let g:ConqueTerm_ReadUnfocused = 1
-  cab CTT ConqueTermTab
-  cab CTS ConqueTermSplit
-  cab CTV ConqueTermVSplit
+  " let g:ConqueTerm_Color = 2
+  " let g:ConqueTerm_ReadUnfocused = 1
+  " cab CTT ConqueTermTab
+  " cab CTS ConqueTermSplit
+  " cab CTV ConqueTermVSplit
 " }
 
 " Custom Mapping {
