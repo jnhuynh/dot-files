@@ -16,11 +16,8 @@
 " }
 
 " vim UI {
-  colorscheme ir_black
-  " set column hilight color
-  hi CursorColumn cterm=none ctermbg=darkgray guibg=darkgray
-  " set line hilight color
-  hi CursorLine cterm=none ctermbg=darkgray guibg=darkgray
+  " http://vim.wikia.com/wiki/Xterm256_color_names_for_console_Vim
+  colorscheme jhuynh_custom
   " set colorcolumn=80
   set cursorcolumn " hilight the current column
   set cursorline " hilight the current line
