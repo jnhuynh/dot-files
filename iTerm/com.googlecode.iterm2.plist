@@ -127,7 +127,7 @@
 	<key>NSWindow Frame Preferences</key>
 	<string>258 314 924 485 0 0 1440 900 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>0 0 1436 878 0 0 1440 878 </string>
+	<string>162 69 598 421 0 0 1440 878 </string>
 	<key>NSWindow Frame iTerm Window 1</key>
 	<string>200 -487 570 473 200 -900 1440 900 </string>
 	<key>NSWindow Frame iTerm Window 2</key>
@@ -377,7 +377,7 @@
 			<key>Idle Code</key>
 			<integer>0</integer>
 			<key>Initial Text</key>
-			<string></string>
+			<string>tmux</string>
 			<key>Jobs to Ignore</key>
 			<array>
 				<string>rlogin</string>
