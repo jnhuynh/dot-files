@@ -6,6 +6,7 @@ configs at my `$HOME` directory.
 
 # Required installed:
 
+- iTerm *the configuration file is availible with this repo.*
 - vim
 - tmux
 - git
