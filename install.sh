@@ -1,7 +1,13 @@
 #!/bin/bash
+
 echo "--- Setting up Bash ---"
 echo "Creating a symbolic link for .bash_profile"
 ln -Ffhs $HOME/.DotFiles/Bash/bash_profile.bash $HOME/.bash_profile
+echo
+
+echo "--- Setting up Tmux ---"
+echo "Creating a symbolic link for .tmux.conf"
+ln -Ffhs $HOME/.DotFiles/Tmux/tmux.conf $HOME/.tmux.conf
 echo
 
 echo "--- Setting up Vim ---"

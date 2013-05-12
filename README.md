@@ -4,6 +4,15 @@ These are '.' prefixed files that I use to configure my Bash shell, Vim, and
 Git. The `install.sh` is a bash script that will create symbolic links to all my
 configs at my `$HOME` directory.
 
+# Required installed:
+
+- vim
+- tmux
+- git
+- homebrew
+- rvm
+- bundler
+
 # Usage
 
 ## Assumptions
