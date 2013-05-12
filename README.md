@@ -7,6 +7,7 @@ configs at my `$HOME` directory.
 # Required installed:
 
 - iTerm *the configuration file is availible with this repo.*
+- reattach-to-user-namespace for copy/pasting
 - vim
 - tmux
 - git

@@ -11,6 +11,9 @@
   set nocompatible " stops vim from copying vi's bugs
   set viewoptions=folds,options,cursor,unix,slash " better unix / windows compatibility
   "set virtualedit=onemore " allow for cursor beyond last character
+  " Allows copy/pasting via pbcopy/pbpaste
+  " http://robots.thoughtbot.com/post/19398560514/how-to-copy-and-paste-with-tmux-on-mac-os-x
+  set clipboard=unnamed
 
   call pathogen#infect()
 " }
