@@ -16,15 +16,11 @@
 " }
 
 " vim UI {
-  " http://vim.wikia.com/wiki/Xterm256_color_names_for_console_Vim
   colorscheme jhuynh_custom
   " set colorcolumn=80
   set cursorcolumn " hilight the current column
   set cursorline " hilight the current line
 
-  set background=dark
-  " set term=linux
-  "
   set list " we do this to show tabs
   "set listchars=tab:>-,trail:. " show tabs and trailing spaces
   set lcs=tab:»_,trail:·
@@ -89,15 +85,6 @@
   " set comments=sl:/*,mb:\ *,elx:\ */:# " intelligent comments
   " set smartindent " use intelligent indentation for C
   " set textwidth=80
-" }
-
-" ConqueTerm {
-" https://code.google.com/p/conque/wiki/Usage
-  " let g:ConqueTerm_Color = 2
-  " let g:ConqueTerm_ReadUnfocused = 1
-  " cab CTT ConqueTermTab
-  " cab CTS ConqueTermSplit
-  " cab CTV ConqueTermVSplit
 " }
 
 " Custom Mapping {

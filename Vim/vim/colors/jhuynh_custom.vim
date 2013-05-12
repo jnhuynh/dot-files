@@ -1,3 +1,4 @@
+" http://vim.wikia.com/wiki/Xterm256_color_names_for_console_Vim
 set background=dark
 hi clear
 
@@ -17,7 +18,7 @@ hi CursorColumn     guifg=NONE        guibg=#3A3A3A     gui=NONE      ctermfg=NO
 hi CursorLine       guifg=NONE        guibg=#3A3A3A     gui=NONE      ctermfg=NONE        ctermbg=237         cterm=NONE
 hi LineNr           guifg=#808080     guibg=NONE        gui=NONE      ctermfg=244         ctermbg=NONE        cterm=NONE
 
-hi VertSplit        guifg=#202020     guibg=#202020     gui=NONE      ctermfg=237         ctermbg=234    cterm=NONE
+hi VertSplit        guifg=#202020     guibg=#202020     gui=NONE      ctermfg=237         ctermbg=237    cterm=NONE
 hi StatusLine       guifg=#CCCCCC     guibg=#202020     gui=italic    ctermfg=255         ctermbg=237    cterm=NONE
 hi StatusLineNC     guifg=black       guibg=#202020     gui=NONE      ctermfg=237         ctermbg=234    cterm=NONE
 
