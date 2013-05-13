@@ -113,15 +113,25 @@
 
 " (http://ilessendata.blogspot.com/2011/05/vimrc-switching-tabs-in-macvim.html)
 " These are all ALT-<NUM> mappings. Useful for when I used CLI Vim.
-  noremap ¡ :tabn 1<CR>
-  noremap ™ :tabn 2<CR>
-  noremap £ :tabn 3<CR>
-  noremap ¢ :tabn 4<CR>
-  noremap ∞ :tabn 5<CR>
-  noremap § :tabn 6<CR>
-  noremap ¶ :tabn 7<CR>
-  noremap • :tabn 8<CR>
-  noremap ª :tabn 9<CR>
+  " noremap ¡ :tabn 1<CR>
+  " noremap ™ :tabn 2<CR>
+  " noremap £ :tabn 3<CR>
+  " noremap ¢ :tabn 4<CR>
+  " noremap ∞ :tabn 5<CR>
+  " noremap § :tabn 6<CR>
+  " noremap ¶ :tabn 7<CR>
+  " noremap • :tabn 8<CR>
+  " noremap ª :tabn 9<CR>
+" Make Vim tab navigation similar in style to my Tmux navigation.
+  noremap <C-w>1 :tabn 1<CR>
+  noremap <C-w>2 :tabn 2<CR>
+  noremap <C-w>3 :tabn 3<CR>
+  noremap <C-w>4 :tabn 4<CR>
+  noremap <C-w>5 :tabn 5<CR>
+  noremap <C-w>6 :tabn 6<CR>
+  noremap <C-w>7 :tabn 7<CR>
+  noremap <C-w>8 :tabn 8<CR>
+  noremap <C-w>9 :tabn 9<CR>
 " }
 
 " Ruby Abbreviations {
