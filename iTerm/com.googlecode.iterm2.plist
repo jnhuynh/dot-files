@@ -27,7 +27,7 @@
 	<key>CopyLastNewline</key>
 	<false/>
 	<key>CopySelection</key>
-	<false/>
+	<true/>
 	<key>Default Arrangement Name</key>
 	<string>Normal</string>
 	<key>Default Bookmark Guid</key>
@@ -82,39 +82,18 @@
 	<true/>
 	<key>MaxVertically</key>
 	<false/>
-	<key>NSColorPanelMode</key>
-	<string>7</string>
-	<key>NSColorPickerSlidersDefaults</key>
-	<string>1</string>
 	<key>NSNavLastRootDirectory</key>
-	<string>~</string>
+	<string>~/Documents</string>
 	<key>NSQuotedKeystrokeBinding</key>
 	<string></string>
 	<key>NSRepeatCountBinding</key>
 	<string></string>
 	<key>NSScrollAnimationEnabled</key>
 	<false/>
-	<key>NSTableView Columns KeyBingingTable</key>
-	<array>
-		<data>
-		BAtzdHJlYW10eXBlZIHoA4QBQISEhAhOU1N0cmluZwGEhAhOU09iamVjdACF
-		hAErATCG
-		</data>
-		<string>198</string>
-		<data>
-		BAtzdHJlYW10eXBlZIHoA4QBQISEhAhOU1N0cmluZwGEhAhOU09iamVjdACF
-		hAErATGG
-		</data>
-		<string>319</string>
-	</array>
-	<key>NSTableView Hidden Columns KeyBingingTable</key>
-	<array/>
-	<key>NSTableView Sort Ordering KeyBingingTable</key>
-	<array/>
 	<key>NSToolbar Configuration Terminal Toolbar</key>
 	<dict>
 		<key>TB Display Mode</key>
-		<integer>2</integer>
+		<integer>1</integer>
 		<key>TB Icon Size Mode</key>
 		<integer>1</integer>
 		<key>TB Is Shown</key>
@@ -122,16 +101,10 @@
 		<key>TB Size Mode</key>
 		<integer>1</integer>
 	</dict>
-	<key>NSWindow Frame NSColorPanel</key>
-	<string>307 284 214 309 0 0 1440 900 </string>
 	<key>NSWindow Frame Preferences</key>
-	<string>258 314 924 485 0 0 1440 900 </string>
+	<string>269 110 924 485 0 0 1440 900 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
 	<string>162 69 598 421 0 0 1440 878 </string>
-	<key>NSWindow Frame iTerm Window 1</key>
-	<string>200 -487 570 473 200 -900 1440 900 </string>
-	<key>NSWindow Frame iTerm Window 2</key>
-	<string>958 0 958 1058 0 0 1920 1058 </string>
 	<key>New Bookmarks</key>
 	<array>
 		<dict>
@@ -984,7 +957,7 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2013-05-12T21:34:09Z</date>
+	<date>2013-05-14T14:51:01Z</date>
 	<key>SavePasteHistory</key>
 	<false/>
 	<key>ShowBookmarkName</key>
