@@ -27,7 +27,7 @@
 	<key>CopyLastNewline</key>
 	<false/>
 	<key>CopySelection</key>
-	<false/>
+	<true/>
 	<key>Default Arrangement Name</key>
 	<string>Normal</string>
 	<key>Default Bookmark Guid</key>
