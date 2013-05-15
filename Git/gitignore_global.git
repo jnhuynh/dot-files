@@ -29,6 +29,10 @@ _site
 *.sqlite
 database.yml
 
+# Work in Progress #
+####################
+wip
+
 # Temporary files #
 ###################
 *.swp
