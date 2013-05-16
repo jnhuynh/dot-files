@@ -34,6 +34,6 @@
 [submodule "Vim/vim/bundle/mustache.vim"]
 	path = Vim/vim/bundle/mustache.vim
 	url = git@github.com:juvenn/mustache.vim.git
-[submodule "Floobits"]
-	path = Floobits
-	url = https://github.com/Floobits/vim-plugin
+[submodule "Vim/vim/bundle/Floobits"]
+	path = Vim/vim/bundle/Floobits
+	url = git@github.com:Floobits/vim-plugin.git
