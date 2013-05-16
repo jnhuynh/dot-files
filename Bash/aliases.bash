@@ -7,9 +7,7 @@
 
 ##### SHELL ####################################################################
 alias blog="cd ~/Documents/Blog/DIRhuynh"
-alias bd="popd"
 alias c="clear"
-alias cd="pushd"
 alias courses="cd ~/Documents/Courses"
 alias dirs="dirs -v"
 alias tstp="date +'%m%d%y_%H%M%S'"
