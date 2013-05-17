@@ -21,6 +21,7 @@
 " vim UI {
   colorscheme jhuynh_custom
   " set colorcolumn=80
+  " hi SignColumn ctermbg=black guibg=#303030 " for syntastic column color.
   set cursorcolumn " hilight the current column
   set cursorline " hilight the current line
 
