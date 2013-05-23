@@ -37,6 +37,17 @@
   " set title " show title in console title bar
   syntax enable " If the terminal supports colors, then turn on syntax highligting.
 
+  " use Ctrl+L to toggle the line number counting method
+  function! g:ToggleNuMode()
+    if(&rnu == 1)
+      set nu
+    else
+      set rnu
+    endif
+  endfunc
+
+  nnoremap <C-L> :call g:ToggleNuMode()<cr>
+
   " Status line {
     " http://got-ravings.blogspot.com/2008/08/vim-pr0n-making-statuslines-that-own.html
     set laststatus=2 " show the status bar on the bottom
