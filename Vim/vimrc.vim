@@ -107,6 +107,8 @@
 " }
 
 " Custom Mapping {
+  nnoremap < gv<
+  nnoremap > gv>
   nnoremap <silent> Ω :nohl<CR>
 
   " Markdown Related {
