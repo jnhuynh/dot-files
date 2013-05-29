@@ -166,7 +166,7 @@
     return (c =~ a:pat) ? '' : c
   endfunc
 
-  iab sterr $stderr.puts("XXX")<ESC>bi
+  iab sterr $stderr.puts("\n\nXXX\n\n")<ESC>5bi
 
   cab be !bundle exec
 " iab rzde def<CR>end<UP><END>
