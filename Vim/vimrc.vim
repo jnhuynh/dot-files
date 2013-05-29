@@ -168,7 +168,7 @@
 
   iab sterr $stderr.puts("XXX")<ESC>bi
 
-  ab be !bundle exec
+  cab be !bundle exec
 " iab rzde def<CR>end<UP><END>
 " Trailing space is added to make proper indentation using the defaulted added space insert by iab.
 " iab rzdo do<CR><CR>end<UP><END><SPACE>
