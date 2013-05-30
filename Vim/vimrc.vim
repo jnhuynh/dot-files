@@ -127,7 +127,7 @@
 " }
 
 " Numbered tab navigation {
-  cab t tabf
+  cab t tabe
 
 " (http://ilessendata.blogspot.com/2011/05/vimrc-switching-tabs-in-macvim.html)
 " These are all ALT-<NUM> mappings. Useful for when I used CLI Vim.
