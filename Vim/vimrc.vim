@@ -84,6 +84,10 @@
     let NERDSpaceDelims=1 " https://github.com/scrooloose/nerdcommenter/blob/master/doc/NERD_commenter.txt
     nnoremap <silent> π :NERDTreeToggle<CR>
   " }
+
+  " CTRL+P configuration {
+    set wildignore+=*.so,*.swp,*.zip,binary_files
+  " }
 " }
 
   " sets json files to use javascript hi lighting
@@ -169,6 +173,11 @@
   iab sterr $stderr.puts("\n\nXXX\n\n")<ESC>5bi
 
   cab be !bundle exec
+  cab ack !ack
+  cab gcom Gcommit
+  cab gst Gstatus
+  cab gbl Gblame
+
 " iab rzde def<CR>end<UP><END>
 " Trailing space is added to make proper indentation using the defaulted added space insert by iab.
 " iab rzdo do<CR><CR>end<UP><END><SPACE>
