@@ -45,7 +45,7 @@
     endif
   endfunc
 
-  nnoremap <C-L> :call g:ToggleNuMode()<cr>
+  nnoremap ¬ :call g:ToggleNuMode()<cr>
 
   " Status line {
     " http://got-ravings.blogspot.com/2008/08/vim-pr0n-making-statuslines-that-own.html
@@ -120,7 +120,7 @@
   " Markdown Related {
     " Wraps the paragraph
     nnoremap <silent> ∑ <S-{><S-V><S-}>gq
-    noremap ¬ <ESC>lbi[<ESC>ea][]<ESC>i
+    noremap å <ESC>lbi[<ESC>ea][]<ESC>i
     vnoremap ç :w !pbcopy<CR><CR>
   " }
 
