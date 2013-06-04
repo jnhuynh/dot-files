@@ -5,7 +5,6 @@
   " set backupdir=~/.vim/backup " where to put backup files
   " set directory=~/.vim/tmp " directory to place swap files in
   set history=1000 " Store a ton of history (default is 20)
-  " set ignorecase " ignore case when searching
   set incsearch " vi will search as you type
   "set mouse=a "allow mouse usage
   set nocompatible " stops vim from copying vi's bugs
@@ -114,6 +113,9 @@
   nnoremap < gv<
   nnoremap > gv>
   nnoremap <silent> Ω :nohl<CR>
+  " Toggle ignore case when searching
+  " http://stackoverflow.com/a/620254
+  nnoremap ß :set ignorecase!<CR>
 
   " Markdown Related {
     " Wraps the paragraph
