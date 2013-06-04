@@ -24,12 +24,6 @@
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"
 PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
 
-if [[ "$HOST" == "dhcp-"*"rbm.local" ]]; then
-  rvm use ree@rbm-rvm-development
-else
-  rvm use ruby
-fi
-
 # Prevents redirected files from overwriting the predecessor
 set -o noclobber
 
