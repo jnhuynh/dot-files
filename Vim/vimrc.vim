@@ -113,18 +113,20 @@
   nnoremap < gv<
   nnoremap > gv>
   " ALT+z
-  nnoremap <silent> Ω :nohl<CR>
+  nnoremap Ω :nohl<CR>
   " Toggle ignore case when searching, ALT+i
   " http://stackoverflow.com/a/620254
   nnoremap ˆ :set ignorecase!<CR>
 
   " Markdown Related {
+    " Removes duplicate spaces, ALT+s
+    vnoremap ß :s;\(\S\)  \(\S\);\1 \2;g
+    " Copy to system buffer, ALT+c
+    vnoremap ç :w !pbcopy<CR><CR>
     " Wraps the paragraph, ALT+w
     nnoremap ∑ <S-{><S-V><S-}>gq
     " ALT+a
     noremap å <ESC>lbi[<ESC>ea][]<ESC>i
-    " ALT+c
-    vnoremap ç :w !pbcopy<CR><CR>
   " }
 
   " Tabular Related {
