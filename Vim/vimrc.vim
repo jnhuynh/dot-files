@@ -36,17 +36,6 @@
   " set title " show title in console title bar
   syntax enable " If the terminal supports colors, then turn on syntax highligting.
 
-  " use Ctrl+L to toggle the line number counting method
-  function! g:ToggleNuMode()
-    if(&rnu == 1)
-      set nu
-    else
-      set rnu
-    endif
-  endfunc
-
-  nnoremap ¬ :call g:ToggleNuMode()<cr>
-
   " Status line {
     " http://got-ravings.blogspot.com/2008/08/vim-pr0n-making-statuslines-that-own.html
     set laststatus=2 " show the status bar on the bottom
@@ -110,17 +99,31 @@
 " }
 
 " Custom Mapping {
+  function! g:ToggleNuMode()
+    if(&rnu == 1)
+      set nu
+    else
+      set rnu
+    endif
+  endfunc
+
+  " use ALT+l to toggle the line number counting method
+  nnoremap ¬ :call g:ToggleNuMode()<cr>
+
   nnoremap < gv<
   nnoremap > gv>
+  " ALT+z
   nnoremap <silent> Ω :nohl<CR>
-  " Toggle ignore case when searching
+  " Toggle ignore case when searching, ALT+i
   " http://stackoverflow.com/a/620254
-  nnoremap ß :set ignorecase!<CR>
+  nnoremap ˆ :set ignorecase!<CR>
 
   " Markdown Related {
-    " Wraps the paragraph
-    nnoremap <silent> ∑ <S-{><S-V><S-}>gq
+    " Wraps the paragraph, ALT+w
+    nnoremap ∑ <S-{><S-V><S-}>gq
+    " ALT+a
     noremap å <ESC>lbi[<ESC>ea][]<ESC>i
+    " ALT+c
     vnoremap ç :w !pbcopy<CR><CR>
   " }
 
@@ -135,8 +138,8 @@
 " Numbered tab navigation {
   cab t tabe
 
-" (http://ilessendata.blogspot.com/2011/05/vimrc-switching-tabs-in-macvim.html)
-" These are all ALT-<NUM> mappings. Useful for when I used CLI Vim.
+  " (http://ilessendata.blogspot.com/2011/05/vimrc-switching-tabs-in-macvim.html)
+  " These are all ALT-<NUM> mappings. Useful for when I used CLI Vim.
   " noremap ¡ :tabn 1<CR>
   " noremap ™ :tabn 2<CR>
   " noremap £ :tabn 3<CR>
@@ -146,7 +149,7 @@
   " noremap ¶ :tabn 7<CR>
   " noremap • :tabn 8<CR>
   " noremap ª :tabn 9<CR>
-" Make Vim tab navigation similar in style to my Tmux navigation.
+  " Make Vim tab navigation similar in style to my Tmux navigation.
   noremap <C-w>1 :tabn 1<CR>
   noremap <C-w>2 :tabn 2<CR>
   noremap <C-w>3 :tabn 3<CR>
@@ -159,14 +162,14 @@
 " }
 
 " Ruby Abbreviations {
-" Multi-line abbreivations help:
-"   http://vim.wikia.com/wiki/Multi-line_abbreviations
-" Vim insert mappings:
-"   http://vimdoc.sourceforge.net/htmldoc/insert.html
-" Vim remove inserted space from expansion:
-"   http://vim.wikia.com/wiki/Use_abbreviations_for_frequently-used_words
-"   http://vimdoc.sourceforge.net/htmldoc/insert.html#a
-"   http://vimdoc.sourceforge.net/htmldoc/map.html#abbreviations
+  " Multi-line abbreivations help:
+  "   http://vim.wikia.com/wiki/Multi-line_abbreviations
+  " Vim insert mappings:
+  "   http://vimdoc.sourceforge.net/htmldoc/insert.html
+  " Vim remove inserted space from expansion:
+  "   http://vim.wikia.com/wiki/Use_abbreviations_for_frequently-used_words
+  "   http://vimdoc.sourceforge.net/htmldoc/insert.html#a
+  "   http://vimdoc.sourceforge.net/htmldoc/map.html#abbreviations
   func Eatchar(pat)
     let c = nr2char(getchar(0))
     return (c =~ a:pat) ? '' : c
@@ -180,16 +183,16 @@
   cab gst Gstatus
   cab gbl Gblame
 
-" iab rzde def<CR>end<UP><END>
-" Trailing space is added to make proper indentation using the defaulted added space insert by iab.
-" iab rzdo do<CR><CR>end<UP><END><SPACE>
+  " iab rzde def<CR>end<UP><END>
+  " Trailing space is added to make proper indentation using the defaulted added space insert by iab.
+  " iab rzdo do<CR><CR>end<UP><END><SPACE>
 
-" " http://tomdoc.org/
-" iab rzcd # Internal:<CR><CR>Examples<UP><UP><END>
-" iab rzmd # Internal:<CR><CR>Examples<CR><CR>Returns<UP><UP><UP><UP><END>
+  " " http://tomdoc.org/
+  " iab rzcd # Internal:<CR><CR>Examples<UP><UP><END>
+  " iab rzmd # Internal:<CR><CR>Examples<CR><CR>Returns<UP><UP><UP><UP><END>
 
-" iab rzmb do \|\|<CR>end<UP><END><LEFT><C-R>=Eatchar('\s')<CR>
-" iab rzsb { \|\| }<LEFT><LEFT><LEFT><C-R>=Eatchar('\s')<CR>
+  " iab rzmb do \|\|<CR>end<UP><END><LEFT><C-R>=Eatchar('\s')<CR>
+  " iab rzsb { \|\| }<LEFT><LEFT><LEFT><C-R>=Eatchar('\s')<CR>
 
-" iab rzif if<CR>end<UP><END>
+  " iab rzif if<CR>end<UP><END>
 " }
