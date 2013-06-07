@@ -19,7 +19,7 @@
   com = commit
   df  = difftool
   fh  = fetch --prune
-  lg  = log --reverse --pretty=format:\"%H - %an, %ar : %s\"
+  lg  = log --reverse --pretty=format:\"%Cred%h%Creset - %an, %ar : %Cgreen%s\" --abbrev-commit
   pl  = pull --rebase
   ph  = push
   st  = status

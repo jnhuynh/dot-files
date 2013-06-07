@@ -180,10 +180,12 @@
   iab sterr $stderr.puts("\n\nXXX\n\n")<ESC>5bi
 
   cab be !bundle exec
+  cab rspec !bundle exec rspec
   cab ack !ack
   cab gcom Gcommit
   cab gst Gstatus
   cab gbl Gblame
+  cab glg !git lg -30
 
   " iab rzde def<CR>end<UP><END>
   " Trailing space is added to make proper indentation using the defaulted added space insert by iab.
