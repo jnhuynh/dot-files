@@ -120,7 +120,7 @@
 
   " Markdown Related {
     " Removes duplicate spaces, ALT+s
-    vnoremap ß :s;\(\S\)  \(\S\);\1 \2;g
+    vnoremap ß :s;\(\S\)  \(\S\);\1 \2;g<CR>
     " Copy to system buffer, ALT+c
     vnoremap ç :w !pbcopy<CR><CR>
     " Wraps the paragraph, ALT+w
