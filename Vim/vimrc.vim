@@ -187,6 +187,10 @@
   cab gst Gstatus
   cab gbl Gblame
   cab glg !git lg -30
+  cab grb !git rb
+  cab gstash !git stash
+  cab gpop !git stash pop
+  cab gapply !git stash apply
 
   " iab rzde def<CR>end<UP><END>
   " Trailing space is added to make proper indentation using the defaulted added space insert by iab.
