@@ -180,6 +180,7 @@
   iab sterr $stderr.puts("\n\nXXX\n\n")<ESC>5bi
 
   cab be !bundle exec
+  cab bi !bundle install
   cab rspec !bundle exec rspec
   cab ack !ack
   cab gcom Gcommit
