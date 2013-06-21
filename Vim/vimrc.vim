@@ -99,6 +99,10 @@
 " }
 
 " Custom Mapping {
+
+  " Remap leader key from default '\' to SPACE
+  let mapleader=' '
+
   function! g:ToggleNuMode()
     if(&rnu == 1)
       set nu
@@ -110,8 +114,21 @@
   " use ALT+l to toggle the line number counting method
   nnoremap ¬ :call g:ToggleNuMode()<cr>
 
+  " Quick Vim split resizing
+  " http://vim.wikia.com/wiki/Resize_splits_more_quickly
+  " 5 to the left
+  nnoremap <silent> <Leader>h :vertical resize -5<CR>
+  " 5 to the right
+  nnoremap <silent> <Leader>l :vertical resize +5<CR>
+  " 5 to the up
+  nnoremap <silent> <Leader>k :resize -5<CR>
+  " 5 to the down
+  nnoremap <silent> <Leader>j :resize +5<CR>
+
+  " Allows quick reindentation by accessing the last visual mode slection.
   nnoremap < gv<
   nnoremap > gv>
+
   " ALT+z
   nnoremap Ω :nohl<CR>
   " Toggle ignore case when searching, ALT+i
