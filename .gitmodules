@@ -34,6 +34,3 @@
 [submodule "Vim/vim/bundle/mustache.vim"]
 	path = Vim/vim/bundle/mustache.vim
 	url = git@github.com:juvenn/mustache.vim.git
-[submodule "Vim/vim/bundle/eregex.vim"]
-	path = Vim/vim/bundle/eregex.vim
-	url = git@github.com:othree/eregex.vim.git
