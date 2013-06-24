@@ -142,7 +142,7 @@
     vnoremap ç :w !pbcopy<CR><CR>
     " Wraps the paragraph, ALT+w
     nnoremap ∑ <S-{><S-V><S-}>gq
-    " ALT+a
+    " Wraps a word in markdown link format, ALT+a
     noremap å <ESC>lbi[<ESC>ea][]<ESC>i
   " }
 
