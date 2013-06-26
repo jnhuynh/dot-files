@@ -74,7 +74,7 @@
   " }
 
   " CTRL+P configuration {
-    set wildignore+=*.so,*.swp,*.zip,binary_files
+    set wildignore+=*.so,*.swp,*.zip,binary_files,*vendor/cache*
   " }
 " }
 
