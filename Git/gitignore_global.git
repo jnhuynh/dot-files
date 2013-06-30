@@ -5,6 +5,7 @@
 *.dll
 *.exe
 *.o
+*.osx
 *.so
 # *.gem
 _site
