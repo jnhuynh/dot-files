@@ -203,8 +203,9 @@
   cab gcom Gcommit
   cab gst Gstatus
   cab gbl Gblame
-  cab glg !git lg -30
+  cab glg !git lg
   cab grb !git rb
+  cab gph !git ph
   cab gstash !git stash
   cab gpop !git stash pop
   cab gapply !git stash apply

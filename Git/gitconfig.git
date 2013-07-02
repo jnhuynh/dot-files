@@ -19,7 +19,7 @@
   com = commit
   df  = difftool
   fh  = fetch --prune
-  lg  = log --reverse --pretty=format:\"%Cred%h%Creset - %an, %ar : %Cgreen%s\" --abbrev-commit
+  lg  = log --pretty=format:\"%Cred%h%Creset - %an, %ar : %Cgreen%s\" --abbrev-commit
   pl  = pull --rebase
   ph  = push
   st  = status
@@ -43,6 +43,6 @@
   tool = Kaleidoscope
 [core]
   editor = vim
-	excludesfile = ~/.gitignore_global
+  excludesfile = ~/.gitignore_global
 [push]
-	default = current
+  default = current
