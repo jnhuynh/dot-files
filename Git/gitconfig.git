@@ -25,6 +25,7 @@
   st  = status
   sh  = show --pretty="format:" --name-only
   rb  = rebase -i
+  us  = reset head
 [user]
   name = John Huynh
   email = j.n.huynh@me.com
