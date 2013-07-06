@@ -169,15 +169,22 @@
   " noremap • :tabn 8<CR>
   " noremap ª :tabn 9<CR>
   " Make Vim tab navigation similar in style to my Tmux navigation.
-  noremap <C-w>1 :tabn 1<CR>
-  noremap <C-w>2 :tabn 2<CR>
-  noremap <C-w>3 :tabn 3<CR>
-  noremap <C-w>4 :tabn 4<CR>
-  noremap <C-w>5 :tabn 5<CR>
-  noremap <C-w>6 :tabn 6<CR>
-  noremap <C-w>7 :tabn 7<CR>
-  noremap <C-w>8 :tabn 8<CR>
-  noremap <C-w>9 :tabn 9<CR>
+  nnoremap <silent> <LEADER>w1 :tabn 1<CR>
+  nnoremap <silent> <LEADER>w2 :tabn 2<CR>
+  nnoremap <silent> <LEADER>w3 :tabn 3<CR>
+  nnoremap <silent> <LEADER>w4 :tabn 4<CR>
+  nnoremap <silent> <LEADER>w5 :tabn 5<CR>
+  nnoremap <silent> <LEADER>w6 :tabn 6<CR>
+  nnoremap <silent> <LEADER>w7 :tabn 7<CR>
+  nnoremap <silent> <LEADER>w8 :tabn 8<CR>
+  nnoremap <silent> <LEADER>w9 :tabn 9<CR>
+
+  " Use SPACE to navigate splits.
+  " http://vim.wikia.com/wiki/Switch_between_Vim_window_splits_easily
+  nnoremap <silent> <LEADER>wk :wincmd k<CR>
+  nnoremap <silent> <LEADER>wj :wincmd j<CR>
+  nnoremap <silent> <LEADER>wh :wincmd h<CR>
+  nnoremap <silent> <LEADER>wl :wincmd l<CR>
 " }
 
 " Ruby Abbreviations {
