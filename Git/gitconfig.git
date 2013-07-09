@@ -28,7 +28,7 @@
   us  = reset head
 [user]
   name = John Huynh
-  email = j.n.huynh@me.com
+  email = dirhuynh@gmail.com
 [difftool "Kaleidoscope"]
   cmd = ksdiff --partial-changeset --relative-path \"$MERGED\" -- \"$LOCAL\" \"$REMOTE\"
 [diff]
