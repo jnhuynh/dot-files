@@ -18,12 +18,14 @@
   co  = checkout
   com = commit
   df  = difftool
+  dif = diff --color-words
   fh  = fetch --prune
   lg  = log --pretty=format:\"%Cred%h%Creset - %an, %ar : %Cgreen%s\" --abbrev-commit
   pl  = pull --rebase
   ph  = push
   st  = status
   sh  = show --pretty="format:" --name-only
+  shw = show --color-words
   rb  = rebase -i
   us  = reset head
 [user]
