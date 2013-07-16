@@ -36,6 +36,7 @@ wip
 
 # Temporary files #
 ###################
+*compiled-application/*
 *.swp
 
 # OS generated files #
