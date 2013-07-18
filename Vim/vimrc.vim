@@ -112,7 +112,7 @@
   endfunc
 
   " use ALT+l to toggle the line number counting method
-  nnoremap ¬ :call g:ToggleNuMode()<cr>
+  nnoremap <silent> ¬ :call g:ToggleNuMode()<cr>
 
   " Quick Vim split resizing
   " http://vim.wikia.com/wiki/Resize_splits_more_quickly
@@ -126,31 +126,31 @@
   nnoremap <silent> <Leader>j :resize +5<CR>
 
   " Allows quick reindentation by accessing the last visual mode slection.
-  nnoremap < gv<
-  nnoremap > gv>
+  nnoremap <silent> < gv<
+  nnoremap <silent> > gv>
 
   " ALT+z
-  nnoremap Ω :nohl<CR>
+  nnoremap <silent> Ω :nohl<CR>
   " Toggle ignore case when searching, ALT+i
   " http://stackoverflow.com/a/620254
-  nnoremap ˆ :set ignorecase!<CR>
+  nnoremap <silent> ˆ :set ignorecase!<CR>
 
   " Markdown Related {
     " Removes duplicate spaces, ALT+s
-    vnoremap ß :s;\(\S\)  \(\S\);\1 \2;g<CR>
+    vnoremap <silent> ß :s;\(\S\)  \(\S\);\1 \2;g<CR>
     " Copy to system buffer, ALT+c
-    vnoremap ç :w !pbcopy<CR><CR>
+    vnoremap <silent> ç :w !pbcopy<CR><CR>
     " Wraps the paragraph, ALT+w
-    nnoremap ∑ <S-{><S-V><S-}>gq
+    nnoremap <silent> ∑ <S-{><S-V><S-}>gq
     " Wraps a word in markdown link format, ALT+a
-    noremap å <ESC>lbi[<ESC>ea][]<ESC>i
+    noremap <silent> å <ESC>lbi[<ESC>ea][]<ESC>i
   " }
 
   " Tabular Related {
     " Line up common seperators.
-    vnoremap t: :Tab /:\zs<CR>
-    vnoremap t= :Tab /=<CR>
-    vnoremap t> :Tab /=><CR>
+    vnoremap <silent> t: :Tab /:\zs<CR>
+    vnoremap <silent> t= :Tab /=<CR>
+    vnoremap <silent> t> :Tab /=><CR>
   " }
 " }
 
