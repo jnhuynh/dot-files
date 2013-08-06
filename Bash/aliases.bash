@@ -31,6 +31,7 @@ alias v="vim"
 alias cbr="git rev-parse --abbrev-ref HEAD"
 alias glgs="glgs.sh"
 alias gsts="gsts.sh"
+alias clean_git_init="rm -rf .git && git init && git add . && git com -m 'Initial commit.'"
 
 ##### Rail, Ruby, Bundle, RVM ##################################################
 
