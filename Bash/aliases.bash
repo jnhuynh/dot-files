@@ -22,8 +22,8 @@ alias ssh="ssh " # X11 Forwarding "ssh -X"
 alias sshC="ssh -N -g -D 8778 cs.uml.edu"
 alias sshGator="ssh -p 2222 jnhuynh@74.53.180.5"
 alias today="date '+%Y_%m_%d'"
-alias v="vim"
-#alias v="mvim"
+#alias v="vim"
+alias v="mvim"
 
 ##### Git ######################################################################
 
