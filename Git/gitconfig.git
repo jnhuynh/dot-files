@@ -2,32 +2,32 @@
   ui = auto
 [color "branch"]
   current = yellow reverse
-  local = yellow
-  remote = green
+  local   = yellow
+  remote  = green
 [color "diff"]
   meta = yellow bold
   frag = magenta bold
-  old = red bold
-  new = green bold
+  old  = red bold
+  new  = green bold
 [color "status"]
-  added = yellow
-  changed = green
+  added     = yellow
+  changed   = green
   untracked = cyan
 [alias]
-  br  = branch
-  co  = checkout
-  com = commit
-  df  = difftool
-  dif = diff --color-words
-  fh  = fetch --prune
-  lg  = log --pretty=format:\"%Cred%h%Creset - %an, %ar : %Cgreen%s\" --abbrev-commit
-  pl  = pull --rebase
-  ph  = push
-  st  = status
-  sh  = show --pretty="format:" --name-only
-  shw = show --color-words
-  rb  = rebase -i
-  us  = reset head
+  br   = branch
+  co   = checkout
+  com  = commit
+  df   = difftool
+  diff = diff --color-words
+  fh   = fetch --prune
+  lg   = log --pretty       = format:\"%Cred%h%Creset - %an, %ar : %Cgreen%s\" --abbrev-commit
+  pl   = pull --rebase
+  ph   = push
+  st   = status
+  sh   = show --pretty      = "format:" --name-only
+  show = show --color-words
+  rb   = rebase -i
+  us   = reset head
 [user]
   name = John Huynh
   email = dirhuynh@gmail.com
