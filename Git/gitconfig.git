@@ -20,11 +20,11 @@
   df   = difftool
   diff = diff --color-words
   fh   = fetch --prune
-  lg   = log --pretty       = format:\"%Cred%h%Creset - %an, %ar : %Cgreen%s\" --abbrev-commit
+  lg   = log --pretty=format:\"%Cred%h%Creset - %an, %ar : %Cgreen%s\" --abbrev-commit
   pl   = pull --rebase
   ph   = push
   st   = status
-  sh   = show --pretty      = "format:" --name-only
+  sh   = show --pretty="format:" --name-only
   show = show --color-words
   rb   = rebase -i
   us   = reset head
