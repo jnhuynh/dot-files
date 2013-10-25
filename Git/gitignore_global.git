@@ -9,6 +9,7 @@
 *.so
 # *.gem
 _site
+_drafts
 
 # Packages #
 ############
