@@ -38,6 +38,8 @@ alias be="bundle exec"
 alias bi="bundle install"
 alias bu="bundle update"
 alias rgu="rvm gemset use"
+alias rgl="rvm gemset list"
 alias ru="rvm use"
+alias rl="rvm list"
 
 ################################################################################
