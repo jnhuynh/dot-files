@@ -20,6 +20,7 @@ alias reload="source ~/.bash_profile"
 alias ssh="ssh " # X11 Forwarding "ssh -X"
 alias sshC="ssh -N -g -D 8778 cs.uml.edu"
 alias today="date '+%Y_%m_%d'"
+alias vdaily="vim $(today).md"
 #alias v="vim"
 alias v="mvim"
 

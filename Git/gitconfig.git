@@ -1,5 +1,5 @@
 [color]
-  ui = auto
+  ui = always
 [color "branch"]
   current = yellow reverse
   local   = yellow
@@ -17,33 +17,18 @@
   br   = branch
   co   = checkout
   com  = commit
-  df   = difftool
-  diff = diff --color-words
+  df   = diff --word-diff=color
   fh   = fetch --prune
   lg   = log --pretty=format:\"%Cred%h%Creset - %an, %ar : %Cgreen%s\" --abbrev-commit
   pl   = pull --rebase
   ph   = push
   st   = status
-  sh   = show --pretty="format:" --name-only
-  show = show --color-words
+  sh   = show --word-diff=color
   rb   = rebase -i
   us   = reset head
 [user]
   name = John Huynh
   email = dirhuynh@gmail.com
-[difftool "Kaleidoscope"]
-  cmd = ksdiff --partial-changeset --relative-path \"$MERGED\" -- \"$LOCAL\" \"$REMOTE\"
-[diff]
-  tool = Kaleidoscope
-[difftool]
-  prompt = false
-[mergetool "Kaleidoscope"]
-  cmd = ksdiff --merge --output \"$MERGED\" --base \"$BASE\" -- \"$LOCAL\" --snapshot \"$REMOTE\" --snapshot
-  trustExitCode = true
-[mergetool]
-  prompt = false
-[merge]
-  tool = Kaleidoscope
 [core]
   editor = vim
   excludesfile = ~/.gitignore_global
