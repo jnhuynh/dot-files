@@ -209,17 +209,4 @@
   cab gbl Gblame
   cab glg !git lg
   cab gph !git ph
-
-  " iab rzde def<CR>end<UP><END>
-  " Trailing space is added to make proper indentation using the defaulted added space insert by iab.
-  " iab rzdo do<CR><CR>end<UP><END><SPACE>
-
-  " " http://tomdoc.org/
-  " iab rzcd # Internal:<CR><CR>Examples<UP><UP><END>
-  " iab rzmd # Internal:<CR><CR>Examples<CR><CR>Returns<UP><UP><UP><UP><END>
-
-  " iab rzmb do \|\|<CR>end<UP><END><LEFT><C-R>=Eatchar('\s')<CR>
-  " iab rzsb { \|\| }<LEFT><LEFT><LEFT><C-R>=Eatchar('\s')<CR>
-
-  " iab rzif if<CR>end<UP><END>
 " }
