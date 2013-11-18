@@ -1,33 +1,11 @@
-[submodule "Vim/vim/bundle/ctrlp.vim"]
-	path = Vim/vim/bundle/ctrlp.vim
-	url = git@github.com:kien/ctrlp.vim.git
-[submodule "Vim/vim/bundle/vim-fugitive"]
-	path = Vim/vim/bundle/vim-fugitive
-	url = git@github.com:tpope/vim-fugitive.git
-[submodule "Vim/vim/bundle/nerdtree"]
-	path = Vim/vim/bundle/nerdtree
-	url = git@github.com:scrooloose/nerdtree.git
-[submodule "Vim/vim/bundle/nerdcommenter"]
-	path = Vim/vim/bundle/nerdcommenter
-	url = git@github.com:scrooloose/nerdcommenter.git
-[submodule "Vim/vim/bundle/vim-gitgutter"]
-	path = Vim/vim/bundle/vim-gitgutter
-	url = git@github.com:airblade/vim-gitgutter.git
-[submodule "Vim/vim/bundle/tabular"]
-	path = Vim/vim/bundle/tabular
-	url = git://github.com/godlygeek/tabular.git
-[submodule "Vim/vim/bundle/vim-endwise"]
-	path = Vim/vim/bundle/vim-endwise
-	url = git://github.com/tpope/vim-endwise.git
-[submodule "Vim/vim/bundle/vim-markdown"]
-	path = Vim/vim/bundle/vim-markdown
-	url = git@github.com:tpope/vim-markdown.git
-[submodule "Vim/vim/bundle/vim-rails"]
-	path = Vim/vim/bundle/vim-rails
-	url = git@github.com:tpope/vim-rails.git
-[submodule "Vim/vim/bundle/syntastic"]
-	path = Vim/vim/bundle/syntastic
-	url = https://github.com/scrooloose/syntastic.git
-[submodule "Vim/vim/bundle/vim-surround"]
-	path = Vim/vim/bundle/vim-surround
-	url = git@github.com:tpope/vim-surround.git
+git@github.com:kien/ctrlp.vim.git
+git@github.com:scrooloose/nerdtree.git
+git@github.com:scrooloose/nerdcommenter.git
+git@github.com:airblade/vim-gitgutter.git
+git@github.com:tpope/vim-fugitive.git
+git@github.com:tpope/vim-markdown.git
+git@github.com:tpope/vim-endwise.git
+git@github.com:tpope/vim-rails.git
+git@github.com:tpope/vim-surround.git
+git@github.com:scrooloose/syntastic.git
+git@github.com:godlygeek/tabular.git
