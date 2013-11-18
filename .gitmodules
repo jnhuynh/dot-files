@@ -31,6 +31,3 @@
 [submodule "Vim/vim/bundle/vim-surround"]
 	path = Vim/vim/bundle/vim-surround
 	url = git@github.com:tpope/vim-surround.git
-[submodule "Vim/vim/bundle/mustache.vim"]
-	path = Vim/vim/bundle/mustache.vim
-	url = git@github.com:juvenn/mustache.vim.git
