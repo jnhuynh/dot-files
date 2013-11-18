@@ -4,17 +4,17 @@
 # Description : Configures interactive non-login bash shells.
 
 # Configure environment:
-. ~/.DotFiles/Bash/environment.bash
+. ~/.dot_files/bash/environment.bash
 
 # Configure aliases:
-. ~/.DotFiles/Bash/aliases.bash
+. ~/.dot_files/bash/aliases.bash
 
 # Add utility functions
-. ~/.DotFiles/Bash/utils.bash
+. ~/.dot_files/bash/utils.bash
 
 # Git completion
 # http://code-worrier.com/blog/autocomplete-git/
-. ~/.DotFiles/Bash/Scripts/git_completion.bash
+. ~/.dot_files/bash/scripts/git_completion.bash
 
 # Add work related utils, not available in repo.
 . ~/.profile
