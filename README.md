@@ -7,13 +7,12 @@ configs at my `$HOME` directory.
 # Required installed:
 
 - iTerm *the configuration file is availible with this repo.*
-- reattach-to-user-namespace for copy/pasting
 - vim
-- tmux
 - git
 - homebrew
 - rvm
 - bundler
+- reattach-to-user-namespace for copy/pasting
 
 # Usage
 
@@ -26,18 +25,25 @@ variable set in your shell.
 
 To start, clone my repo to anywhere you want.
 
-`$ git clone git@github.com:DIRhuynh/DotFiles.git`
+`$ git clone git@github.com:DIRhuynh/dot_files.git`
 
-Navigate into the DotFiles directory and execute the bash script:
+Rename it to `$HOME/.dot_files`.
+
+`$ mv dot_files ~/.dot_files`
+
+Navigate into the `dot_files` directory and execute the bash script:
 
 `$ ./install.sh`
 
 ## Updating the Vim Plugins
 
 The Vim plugin are Git submodules so you can update them by navigating to
-DotFiles directory and executing the command:
+`dot_files` directory and executing the command:
 
 `$ git submodule update`
+
+The install script will install all plugins in the `vim/vim/bundle/plugins.md` file.
+All of the plugins are installed into the `vim/vim/bundle` directory.
 
 # License
 These files are made available under the [MIT License](http://opensource.org/licenses/MIT).

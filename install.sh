@@ -24,6 +24,8 @@ echo ""
 cd $HOME/.dot_files/
 echo "Downloading plugins"
 git submodule init
+cd vim/vim/bundle
+cat plugins.md | while read line; do git submodule add $line; done
 git submodule update
 cd $HOME
 echo
