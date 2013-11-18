@@ -24,8 +24,14 @@ echo ""
 cd $HOME/.dot_files/
 echo "Downloading plugins"
 git submodule init
-cd vim/vim/bundle
-cat plugins.md | while read line; do git submodule add $line; done
+mkdir -p vim/vim/bundle
+
+cat vim/vim/plugins.md |
+while read line;
+  do dir_name=`echo $line | sed 's;git@github\.com:.*\/\(.*\)\.git;\1;'`;
+  git submodule add $line vim/vim/bundle/$dir_name;
+done
+
 git submodule update
 cd $HOME
 echo

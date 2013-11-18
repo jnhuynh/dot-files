@@ -1,3 +1,8 @@
+# Git submodules #
+##################
+.gitmodules
+vim/vim/bundle
+
 # Compiled source #
 ###################
 *.com

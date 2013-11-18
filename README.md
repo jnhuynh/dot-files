@@ -42,7 +42,7 @@ The Vim plugin are Git submodules so you can update them by navigating to
 
 `$ git submodule update`
 
-The install script will install all plugins in the `vim/vim/bundle/plugins.md` file.
+The install script will install all plugins in the `vim/vim/plugins.md` file.
 All of the plugins are installed into the `vim/vim/bundle` directory.
 
 # License
