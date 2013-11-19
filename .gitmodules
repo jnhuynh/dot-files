@@ -31,3 +31,6 @@
 [submodule "vim/vim/bundle/tabular"]
 	path = vim/vim/bundle/tabular
 	url = git@github.com:godlygeek/tabular.git
+[submodule "vim/vim/bundle/supertab"]
+	path = vim/vim/bundle/supertab
+	url = git@github.com:ervandew/supertab.git
