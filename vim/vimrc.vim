@@ -63,6 +63,8 @@
     let g:syntastic_mode_map = { 'mode': 'active',
                                \ 'active_filetypes': [],
                                \ 'passive_filetypes': ['html'] }
+    let g:syntastic_check_on_open=0 " disable syntax check on buffer load/save. CPU spikes hurt.
+    cab sc SyntasticCheck
   " }
 
   " NERDTree configuration {
