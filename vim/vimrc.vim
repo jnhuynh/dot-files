@@ -60,10 +60,7 @@
     " set statusline+=%#warningmsg#
     set statusline+=%{SyntasticStatuslineFlag()}
     set statusline+=%*
-    let g:syntastic_mode_map = { 'mode': 'active',
-                               \ 'active_filetypes': [],
-                               \ 'passive_filetypes': ['html'] }
-    let g:syntastic_check_on_open=0 " disable syntax check on buffer load/save. CPU spikes hurt.
+    let g:syntastic_mode_map = { 'mode': 'passive' }
     cab sc SyntasticCheck
   " }
 
@@ -114,7 +111,7 @@
   endfunc
 
   " use ALT+l to toggle the line number counting method
-  nnoremap <silent> ¬ :call g:ToggleNuMode()<cr>
+  " nnoremap <silent> ¬ :call g:ToggleNuMode()<cr>
 
   " Quick Vim split resizing
   " http://vim.wikia.com/wiki/Resize_splits_more_quickly
