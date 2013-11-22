@@ -200,7 +200,7 @@
     return (c =~ a:pat) ? '' : c
   endfunc
 
-  iab sterr $stderr.puts("\n\nXXX\n\n")<ESC>5bi
+  iab sterr $stderr.puts("\n\nXXX #{.inspect}\n\n")<ESC>6bhi
 
   cab be !bundle exec
   cab gcom Gcommit
