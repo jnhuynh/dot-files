@@ -10,3 +10,4 @@ git@github.com:tpope/vim-surround.git
 git@github.com:scrooloose/syntastic.git
 git@github.com:godlygeek/tabular.git
 git@github.com:ervandew/supertab.git
+git@github.com:mustache/vim-mustache-handlebars.git
