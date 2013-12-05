@@ -61,7 +61,13 @@
     set statusline+=%{SyntasticStatuslineFlag()}
     set statusline+=%*
     " let g:syntastic_mode_map = { 'mode': 'passive' }
-    cab sc SyntasticCheck
+    " cab sc SyntasticCheck
+  " }
+
+  " Vim-Git-Gutter Settings {
+    let g:gitgutter_enabled = 0 " off by default
+    let g:gitgutter_eager   = 0 " eager causes lag
+    nnoremap <silent> © :GitGutterToggle<CR>
   " }
 
   " NERDTree configuration {
