@@ -60,7 +60,7 @@
     " set statusline+=%#warningmsg#
     set statusline+=%{SyntasticStatuslineFlag()}
     set statusline+=%*
-    let g:syntastic_mode_map = { 'mode': 'passive' }
+    " let g:syntastic_mode_map = { 'mode': 'passive' }
     cab sc SyntasticCheck
   " }
 
