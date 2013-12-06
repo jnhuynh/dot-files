@@ -32,7 +32,7 @@
   brs  = branch --contains
 [user]
   name = John Huynh
-  email = dirhuynh@gmail.com
+  email = jn@huynh.io
 [core]
   editor = vim
   excludesfile = ~/.gitignore_global
