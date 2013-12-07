@@ -83,8 +83,9 @@
   " }
 " }
 
-  " sets json files to use javascript hi lighting
+  " sets json and js.es6 files to use javascript hi lighting
   autocmd BufNewFile,BufRead *.json set ft=javascript
+  autocmd BufNewFile,BufRead *.es6 set ft=javascript
   " set Markdown files to have hard text wrap
   autocmd BufNewFile,BufRead *.md,*.txt setlocal textwidth=80
 
