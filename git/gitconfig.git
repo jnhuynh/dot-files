@@ -28,6 +28,8 @@
   us   = reset head
   # Bash function idea from http://stackoverflow.com/a/3322412
   sta  = "!function f { git stash apply stash@{$1}; }; f"
+  stp  = stash pop
+  stl  = stash list
   # Branch Searching via http://mislav.uniqpath.com/2010/07/git-tips/
   brs  = branch --contains
 [user]
