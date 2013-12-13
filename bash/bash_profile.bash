@@ -16,6 +16,9 @@
 # http://code-worrier.com/blog/autocomplete-git/
 . ~/.dot_files/bash/scripts/git_completion.bash
 
+# Numbify lines of single "words", used for quick text expansion.
+. ~/.dot_files/bash/scripts/numbify.sh
+
 # Add work related utils, not available in repo.
 . ~/.profile
 
