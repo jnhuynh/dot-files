@@ -93,7 +93,9 @@
   " Vim-Git-Gutter Settings {
     let g:gitgutter_enabled = 0 " off by default
     let g:gitgutter_eager   = 0 " eager causes lag
-    nnoremap <silent> <Leader>g :GitGutterToggle<CR>
+
+    " ALT + g
+    nnoremap <silent> © :GitGutterToggle<CR>
   " }
 
   " NERDTree configuration {
@@ -101,7 +103,9 @@
     " close vim if NERDTree is the last buffer.
     autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTreeType == "primary") | q | endif
     let NERDSpaceDelims=1 " https://github.com/scrooloose/nerdcommenter/blob/master/doc/NERD_commenter.txt
-    nnoremap <silent> <Leader>t :NERDTreeToggle<CR>
+
+    " ALT + t
+    nnoremap <silent> † :NERDTreeToggle<CR>
   " }
 
   " CTRL+P configuration {
