@@ -36,6 +36,24 @@
   " set title " show title in console title bar
   syntax enable " If the terminal supports colors, then turn on syntax highligting.
 
+  " Vim Folding {
+      set foldmethod=syntax
+      " Without a level, Vim auto-folds *everything*.
+      set foldlevel=1
+
+      " Tell it to remember the fold levels you last had in each file
+      " au BufWinLeave ?* mkview
+      " au BufWinEnter ?* silent loadview
+
+      nnoremap <silent> ft za
+      nnoremap <silent> fo zo
+      nnoremap <silent> fO zO
+      nnoremap <silent> fc zc
+      nnoremap <silent> fC zC
+      nnoremap <silent> fr zr
+      nnoremap <silent> fm zm
+  " }
+
   " Status line {
     " http://got-ravings.blogspot.com/2008/08/vim-pr0n-making-statuslines-that-own.html
     set laststatus=2 " show the status bar on the bottom
@@ -56,6 +74,14 @@
     " set statusline+=\ %P            " percent through file
   " }
 
+  " Fugitive-vim Settings {
+      cab gcom Gcommit
+      cab gst Gstatus
+      cab gbl Gblame
+      cab glg !git lg
+      cab gph !git ph
+  " }
+
   " Syntastic Settings {
     " set statusline+=%#warningmsg#
     set statusline+=%{SyntasticStatuslineFlag()}
@@ -67,7 +93,7 @@
   " Vim-Git-Gutter Settings {
     let g:gitgutter_enabled = 0 " off by default
     let g:gitgutter_eager   = 0 " eager causes lag
-    nnoremap <silent> © :GitGutterToggle<CR>
+    nnoremap <silent> <Leader>g :GitGutterToggle<CR>
   " }
 
   " NERDTree configuration {
@@ -75,7 +101,7 @@
     " close vim if NERDTree is the last buffer.
     autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTreeType == "primary") | q | endif
     let NERDSpaceDelims=1 " https://github.com/scrooloose/nerdcommenter/blob/master/doc/NERD_commenter.txt
-    nnoremap <silent> π :NERDTreeToggle<CR>
+    nnoremap <silent> <Leader>t :NERDTreeToggle<CR>
   " }
 
   " CTRL+P configuration {
@@ -135,8 +161,9 @@
   nnoremap <silent> < gv<
   nnoremap <silent> > gv>
 
-  " ALT+z
-  nnoremap <silent> Ω :nohl<CR>
+  " Disables hilight from search.
+  nnoremap <silent> <Leader>z :nohl<CR>
+
   " Toggle ignore case when searching, ALT+i
   " http://stackoverflow.com/a/620254
   nnoremap <silent> ˆ :set ignorecase!<CR>
@@ -210,9 +237,4 @@
   iab sterr $stderr.puts("\n\nXXX #{.inspect}\n\n")<ESC>6bhi
 
   cab be !bundle exec
-  cab gcom Gcommit
-  cab gst Gstatus
-  cab gbl Gblame
-  cab glg !git lg
-  cab gph !git ph
 " }
