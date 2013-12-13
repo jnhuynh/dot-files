@@ -20,9 +20,11 @@
   df   = diff --word-diff=color
   fh   = fetch --prune
   lg   = log --pretty=format:\"%Cred%h%Creset - %an, %ar : %Cgreen%s\" --abbrev-commit
+  nlg  = "!function f { source ${HOME}/.bash_profile; git lg -9 | awk '{ print $1 }' | nfy; }; f"
   pl   = pull --rebase
   ph   = push
   st   = status -sb
+  nst  = "!function f { source ${HOME}/.bash_profile; git st | awk '{ print $2 }' | nfy; }; f"
   sh   = show --word-diff=color
   rb   = rebase -i
   us   = reset head
