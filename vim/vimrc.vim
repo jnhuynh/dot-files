@@ -104,8 +104,8 @@
     autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTreeType == "primary") | q | endif
     let NERDSpaceDelims=1 " https://github.com/scrooloose/nerdcommenter/blob/master/doc/NERD_commenter.txt
 
-    " ALT + t
-    nnoremap <silent> † :NERDTreeToggle<CR>
+    " ALT + p
+    nnoremap <silent> π :NERDTreeToggle<CR>
   " }
 
   " CTRL+P configuration {
