@@ -24,7 +24,7 @@
   pl   = pull --rebase
   ph   = push
   st   = status -sb
-  nst  = "!function f { source ${HOME}/.bash_profile; git st | awk '{ print $2 }' | nfy; }; f"
+  nst  = "!function f { source ${HOME}/.bash_profile; git status -s | awk '{ print $2 }' | nfy; }; f"
   sh   = show --word-diff=color
   rb   = rebase -i
   us   = reset head
