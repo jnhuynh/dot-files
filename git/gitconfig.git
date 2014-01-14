@@ -28,7 +28,7 @@
   sh   = show --word-diff=color
   rb   = rebase -i
   us   = reset head
-  sts  = stash --keep-index
+  sts  = stash save --keep-index
   stp  = stash pop
   stl  = stash list
   # Bash function idea from http://stackoverflow.com/a/3322412
