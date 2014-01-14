@@ -30,13 +30,17 @@ PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
 # Prevents redirected files from overwriting the predecessor
 set -o noclobber
 
+# Vim CLI interactions. :D
+set -o vi
+set show-all-if-ambiguous on
+set completion-ignore-case o
+set editing-mode vi
+
 # Prevents message spam
 mesg n
 
 # https://coderwall.com/p/oqtj8w
 bind '"\e[A": history-search-backward' #up-arrow through history
 bind '"\e[B": history-search-forward' #down-arrow through history
-set show-all-if-ambiguous on
-set completion-ignore-case o
 
 PROMPT_COMMAND=prompt
