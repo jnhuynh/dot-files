@@ -121,13 +121,15 @@
 
 " Text Formatting {
   autocmd FileType make setlocal noexpandtab " prevent tab expansion when working on Makefiles
+  autocmd FileType javascript setlocal tabstop=4 " prevent tab expansion when working on Makefiles
+  autocmd FileType javascript setlocal shiftwidth=4 " prevent tab expansion when working on Makefiles
   set expandtab  " expand tabs to spaces
   filetype plugin on " enable file type detection. Used by nerdcommenter.
 
   set iskeyword-=\_
 
   set autoindent " use indentation of previous line
-  set shiftwidth=2 " indent also with 4 spaces
+  set shiftwidth=2 " indent also with 2 spaces
   set tabstop=2 " tab width is 2 spaces
   " set comments=sl:/*,mb:\ *,elx:\ */:# " intelligent comments
   " set smartindent " use intelligent indentation for C
