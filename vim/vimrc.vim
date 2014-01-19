@@ -39,7 +39,7 @@
   " Vim Folding {
       set foldmethod=syntax
       " Without a level, Vim auto-folds *everything*.
-      set foldlevel=1
+      set foldlevel=3
 
       " Tell it to remember the fold levels you last had in each file
       " au BufWinLeave ?* mkview
