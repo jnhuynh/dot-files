@@ -109,7 +109,7 @@
   " }
 
   " CTRL+P configuration {
-    set wildignore+=*.so,*.o,*.osx,*.swp,*.zip,binary_files,*vendor/cache*,*tmp/*
+    set wildignore+=*.so,*.o,*.osx,*.swp,*.zip,binary_files,*vendor*,*tmp/*,*node_modules/*,*tasks/*
   " }
 " }
 
