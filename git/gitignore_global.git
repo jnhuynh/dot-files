@@ -37,6 +37,7 @@ wip
 
 # Temporary files #
 ###################
+*sass-cache/*
 *compiled-application/*
 *.swp
 
