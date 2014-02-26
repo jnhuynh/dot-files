@@ -34,10 +34,10 @@ PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
 set -o noclobber
 
 # Vim CLI interactions. :D
-set -o vi
+# set -o vi
 set show-all-if-ambiguous on
 set completion-ignore-case o
-set editing-mode vi
+# set editing-mode vi
 
 # Prevents message spam
 mesg n
