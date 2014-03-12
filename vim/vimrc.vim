@@ -37,9 +37,9 @@
   syntax enable " If the terminal supports colors, then turn on syntax highligting.
 
   " Vim Folding {
-      set foldmethod=syntax
+      " set foldmethod=syntax
       " Without a level, Vim auto-folds *everything*.
-      set foldlevel=3
+      " set foldlevel=3
 
       " Tell it to remember the fold levels you last had in each file
       " au BufWinLeave ?* mkview
