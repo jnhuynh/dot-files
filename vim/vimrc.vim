@@ -18,7 +18,7 @@
 " }
 
 " vim UI {
-  colorscheme jhuynh_custom
+  colorscheme apprentice
   " set colorcolumn=80
   " hi SignColumn ctermbg=black guibg=#303030 " for syntastic column color.
   set cursorcolumn " hilight the current column
