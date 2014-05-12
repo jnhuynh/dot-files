@@ -11,6 +11,10 @@ if has('gui_running')
   set vb " Disables audio bell.
   " Fixes weird column styling with gitgutter
   highlight clear SignColumn
+  " Hides the scroll bar.
+  " http://thisblog.runsfreesoftware.com/?q=Remove+scrollbars+from+Gvim
+  set guioptions+=LRrb
+  set guioptions-=LRrb
 " }
 "
 " Numbered tab navigation {
