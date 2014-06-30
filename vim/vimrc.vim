@@ -124,7 +124,7 @@
   set expandtab  " expand tabs to spaces
   filetype plugin on " enable file type detection. Used by nerdcommenter.
 
-  set iskeyword-=\_
+  " set iskeyword-=\_
 
   set autoindent " use indentation of previous line
   set shiftwidth=2 " indent also with 2 spaces
