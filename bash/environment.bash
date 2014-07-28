@@ -13,7 +13,7 @@ export NAME="John Huynh"
 export SHELL="/bin/bash"
 export EDITOR="vim"
 export VIEW=""
-export PATH=/usr/local/bin:/bin:/sbin:/usr/bin:/usr/sbin:~/.dot_files/bash/scripts
+export PATH=/usr/local/bin:/bin:/sbin:/usr/bin:/usr/sbin:/usr/local/sbin:~/.dot_files/bash/scripts
 
 # Colors
 # http://systhread.net/texts/200703bashish.php
