@@ -19,9 +19,6 @@
 # Numbify lines of single "words", used for quick text expansion.
 . ~/.dot_files/bash/scripts/numbify.sh
 
-# Add work related utils, not available in repo.
-. ~/.profile
-
 # Load NVM before RVM because RVM has annoying warnings
 [[ -s "$HOME/.nvm/nvm.sh" ]] && source "$HOME/.nvm/nvm.sh"
 
@@ -47,3 +44,6 @@ bind '"\e[A": history-search-backward' #up-arrow through history
 bind '"\e[B": history-search-forward' #down-arrow through history
 
 PROMPT_COMMAND=prompt
+
+# Add work related utils, not available in repo.
+. ~/.profile
