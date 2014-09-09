@@ -22,6 +22,11 @@
 # Load NVM before RVM because RVM has annoying warnings
 [[ -s "$HOME/.nvm/nvm.sh" ]] && source "$HOME/.nvm/nvm.sh"
 
+# Load PyEnv
+PYENV_ROOT=$HOME/.pyenv
+PATH=$PYENV_ROOT/bin:$PATH
+eval "$(pyenv init -)"
+
 # Check if the rvm initialization script exists and sources it to set necessary 
 # environment variables.
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"
