@@ -1,6 +1,8 @@
 #!/bin/bash
 
 echo "--- Setting up Bash ---"
+echo "Creating a symbolic link for .bashrc"
+ln -Ffhs $HOME/.dot_files/bash/bashrc.bash $HOME/.bashrc
 echo "Creating a symbolic link for .bash_profile"
 ln -Ffhs $HOME/.dot_files/bash/bash_profile.bash $HOME/.bash_profile
 echo
