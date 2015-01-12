@@ -1,7 +1,7 @@
 if has('gui_running')
 " UI {
   colorscheme apprentice
-  set guifont=Menlo:h16
+  set guifont=Monaco:h12
   " http://choorucode.wordpress.com/2011/07/29/vim-set-color-of-colorcolumn/
   hi colorcolumn guibg=#444444
   hi cursorline cterm=none ctermbg=black guibg=#444444
