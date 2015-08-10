@@ -22,11 +22,6 @@ source ~/.dot_files/bash/scripts/numbify.sh
 # Load NVM before RVM because RVM has annoying warnings
 [[ -s "$HOME/.nvm/nvm.sh" ]] && source "$HOME/.nvm/nvm.sh"
 
-# Load PyEnv
-export PYENV_ROOT=$HOME/.pyenv
-export PATH=$PYENV_ROOT/bin:$PATH
-eval "$(pyenv init -)"
-
 # Check if the rvm initialization script exists and sources it to set necessary 
 # environment variables.
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"
