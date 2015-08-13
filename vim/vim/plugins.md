@@ -2,12 +2,9 @@ git@github.com:kien/ctrlp.vim.git
 git@github.com:scrooloose/nerdtree.git
 git@github.com:scrooloose/nerdcommenter.git
 git@github.com:airblade/vim-gitgutter.git
-git@github.com:tpope/vim-fugitive.git
 git@github.com:tpope/vim-markdown.git
 git@github.com:tpope/vim-endwise.git
-git@github.com:tpope/vim-rails.git
 git@github.com:tpope/vim-surround.git
 git@github.com:scrooloose/syntastic.git
-git@github.com:godlygeek/tabular.git
 git@github.com:ervandew/supertab.git
 git@github.com:mustache/vim-mustache-handlebars.git

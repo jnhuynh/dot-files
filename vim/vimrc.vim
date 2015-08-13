@@ -1,15 +1,11 @@
 " John N. Huynh .vimrc file
 
 "  General {
-  " set backup " enable backups
-  " set backupdir=~/.vim/backup " where to put backup files
-  " set directory=~/.vim/tmp " directory to place swap files in
   set history=1000 " Store a ton of history (default is 20)
   set incsearch " vi will search as you type
-  "set mouse=a "allow mouse usage
   set nocompatible " stops vim from copying vi's bugs
   set viewoptions=folds,options,cursor,unix,slash " better unix / windows compatibility
-  "set virtualedit=onemore " allow for cursor beyond last character
+
   " Allows copy/pasting via pbcopy/pbpaste
   " http://robots.thoughtbot.com/post/19398560514/how-to-copy-and-paste-with-tmux-on-mac-os-x
   set clipboard=unnamed
@@ -19,13 +15,10 @@
 
 " vim UI {
   colorscheme apprentice
-  " set colorcolumn=80
-  " hi SignColumn ctermbg=black guibg=#303030 " for syntastic column color.
   set cursorcolumn " hilight the current column
   set cursorline " hilight the current line
 
   set list " we do this to show tabs
-  "set listchars=tab:>-,trail:. " show tabs and trailing spaces
   set lcs=tab:»_,trail:·
 
   set number " vim will display line numbers
@@ -33,26 +26,7 @@
 
   set hlsearch  " highlight search results
   set showmatch " highlight matching braces
-  " set title " show title in console title bar
   syntax enable " If the terminal supports colors, then turn on syntax highligting.
-
-  " Vim Folding {
-      " set foldmethod=syntax
-      " Without a level, Vim auto-folds *everything*.
-      " set foldlevel=3
-
-      " Tell it to remember the fold levels you last had in each file
-      " au BufWinLeave ?* mkview
-      " au BufWinEnter ?* silent loadview
-
-      nnoremap <silent> ft za
-      nnoremap <silent> fo zo
-      nnoremap <silent> fO zO
-      nnoremap <silent> fc zc
-      nnoremap <silent> fC zC
-      nnoremap <silent> fr zr
-      nnoremap <silent> fm zm
-  " }
 
   " Status line {
     " http://got-ravings.blogspot.com/2008/08/vim-pr0n-making-statuslines-that-own.html
@@ -74,28 +48,12 @@
     " set statusline+=\ %P            " percent through file
   " }
 
-  " Fugitive-vim Settings {
-      cab gcom Gcommit
-      cab gst Gstatus
-      cab gbl Gblame
-      cab glg !git lg
-      cab gph !git ph
-  " }
-
   " Syntastic Settings {
-    " set statusline+=%#warningmsg#
+    set statusline+=%#warningmsg#
     set statusline+=%{SyntasticStatuslineFlag()}
     set statusline+=%*
     let g:syntastic_mode_map = { 'mode': 'active', 'passive_filetypes': ['html'] }
-    " cab sc SyntasticCheck
-  " }
-
-  " Vim-Git-Gutter Settings {
-    let g:gitgutter_enabled = 0 " off by default
-    let g:gitgutter_eager   = 0 " eager causes lag
-
-    " ALT + g
-    nnoremap <silent> © :GitGutterToggle<CR>
+    cab sc SyntasticCheck
   " }
 
   " NERDTree configuration {
@@ -129,9 +87,6 @@
   set autoindent " use indentation of previous line
   set shiftwidth=2 " indent also with 2 spaces
   set tabstop=2 " tab width is 2 spaces
-  " set comments=sl:/*,mb:\ *,elx:\ */:# " intelligent comments
-  " set smartindent " use intelligent indentation for C
-  " set textwidth=80
 " }
 
 " Custom Mapping {
@@ -139,16 +94,6 @@
   " Remap leader key from default '\' to SPACE
   let mapleader=' '
 
-  function! g:ToggleNuMode()
-    if(&rnu == 1)
-      set nu
-    else
-      set rnu
-    endif
-  endfunc
-
-  " use ALT+l to toggle the line number counting method
-  " nnoremap <silent> ¬ :call g:ToggleNuMode()<cr>
 
   " Quick Vim split resizing
   " http://vim.wikia.com/wiki/Resize_splits_more_quickly
@@ -181,13 +126,6 @@
     nnoremap <silent> ∑ <S-{><S-V><S-}>gq
     " Wraps a word in markdown link format, ALT+a
     noremap <silent> å <ESC>lbi[<ESC>ea][]<ESC>i
-  " }
-
-  " Tabular Related {
-    " Line up common seperators.
-    vnoremap <silent> t: :Tab /:\zs<CR>
-    vnoremap <silent> t= :Tab /=<CR>
-    vnoremap <silent> t> :Tab /=><CR>
   " }
 " }
 
