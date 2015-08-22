@@ -53,6 +53,8 @@ plugins=(bower colorized-man ember-cli git node npm zsh-syntax-highlighting)
 
 # User configuration
 
+DEFAULT_USER=jnhuynh
+
 export PATH=$HOME/bin:/usr/local/bin:$PATH
 # export MANPATH="/usr/local/man:$MANPATH"
 
