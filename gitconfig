@@ -1,0 +1,44 @@
+[color]
+  ui = auto
+[color "branch"]
+  current = yellow reverse
+  local   = yellow
+  remote  = green
+[color "diff"]
+  meta = yellow bold
+  frag = magenta bold
+  old  = red bold
+  new  = green bold
+[color "status"]
+  added     = yellow
+  changed   = green
+  untracked = cyan
+[alias]
+  br   = branch
+  co   = checkout
+  com  = commit
+  df   = diff --word-diff=color
+  fh   = fetch --prune
+  lg   = log --pretty=format:\"%Cred%h%Creset - %an, %ar : %Cgreen%s\" --abbrev-commit
+  pl   = pull --rebase
+  ph   = push
+  st   = status -sb
+  sh   = show --word-diff=color
+  rb   = rebase -i
+  us   = reset head
+  sts  = stash save --keep-index
+  stp  = stash pop
+  stl  = stash list
+  # Bash function idea from http://stackoverflow.com/a/3322412
+  sta  = "!function f { git stash apply stash@{$1}; }; f"
+  std  = "!function f { git stash drop stash@{$1}; }; f"
+  # Branch Searching via http://mislav.uniqpath.com/2010/07/git-tips/
+  brs  = branch --contains
+[user]
+  name = John Huynh
+  email = john@huynh.io
+[core]
+  editor = vim
+  excludesfile = ~/.gitignore_global
+[push]
+  default = current

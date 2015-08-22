@@ -1,0 +1,5 @@
+alias ls="ls -FGh"
+alias ll="ls -l -FGh"
+alias la="ls -la -FGh"
+alias reload="source ~/.zshrc"
+alias v="mvim"

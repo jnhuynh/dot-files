@@ -1,0 +1,9 @@
+git@github.com:kien/ctrlp.vim.git
+git@github.com:scrooloose/nerdcommenter.git
+git@github.com:scrooloose/nerdtree.git
+git@github.com:ervandew/supertab.git
+git@github.com:bling/vim-airline.git
+git@github.com:altercation/vim-colors-solarized.git
+git@github.com:pangloss/vim-javascript.git
+git@github.com:plasticboy/vim-markdown.git
+git@github.com:tpope/vim-surround.git
