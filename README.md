@@ -24,13 +24,13 @@ Navigate into the `dot_files` directory and execute the bash script:
 
 `$ ./install.sh`
 
-## Updating the Vim Plugins
+## Updating the Vim and oh-my-zsh Plugins
 
-The install script will install all plugins in the `vim/plugins.md` file.  To
-add a new vim plugin, just add the git repository into the `vim/plugins.md`
-file.
+The install script will install all plugins in the `vim/plugins.md` and
+`oh-my-zsh-custom/plugins.md` files for their respective tools. To add a new
+plugin, just add the git repository into appropriate file.
 
-All of the plugins are installed into the `vim/bundle` directory.
+All of the plugins are installed into the `vim/bundle` and `oh-my-zsh-custom/plugins` directories.
 
 # License
 These files are made available under the [MIT License](http://opensource.org/licenses/MIT).
