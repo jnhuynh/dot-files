@@ -1,23 +1,18 @@
 # Intro
 
-These are '.' prefixed files that I use to configure my ZSH, Vim, and
-Git. The `install.sh` is a bash script that will create symbolic links to all my
-configs at my `$HOME` directory.
+These are '.' prefixed files that I use to configure my ZSH, Vim, and Git. The
+`install.sh` is a bash script that will create symbolic links to all my configs
+at my `$HOME` directory.
 
 # Required installed:
 
-- iTerm
-- Oh-My-ZSH
+- [iTerm](https://www.iterm2.com/)
+- [oh-my-zsh](https://github.com/robbyrussell/oh-my-zsh)
 - vim
-- vim-pathogen
+- [vim-pathogen](https://github.com/tpope/vim-pathogen)
 - git
 
 # Usage
-
-## Assumptions
-
-The `install.sh` is very barebones and assumes you have the `$HOME` environment
-variable set in your shell.
 
 ## Setup
 
