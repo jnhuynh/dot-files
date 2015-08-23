@@ -6,4 +6,5 @@ git@github.com:bling/vim-airline.git
 git@github.com:altercation/vim-colors-solarized.git
 git@github.com:pangloss/vim-javascript.git
 git@github.com:plasticboy/vim-markdown.git
+git@github.com:mustache/vim-mustache-handlebars.git
 git@github.com:tpope/vim-surround.git
