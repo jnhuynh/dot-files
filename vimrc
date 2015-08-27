@@ -115,6 +115,10 @@
   nnoremap <silent> π :NERDTreeToggle<CR>
 " }
 
+" Tagbar configuration {
+  nnoremap <silent> ø :TagbarToggle<CR>
+" }
+
 " CTRL+P configuration {
   set wildignore+=*.so,*.o,*.osx,*.swp,*.zip,binary_files,*vendor*,*tmp*,*node_modules*,*tasks*,*DerivedData*
 " }
