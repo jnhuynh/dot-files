@@ -1,5 +1,4 @@
 " General {
-  set incsearch
   set nocompatible
   call pathogen#infect()
 
@@ -11,9 +10,11 @@
   set shiftwidth=2 " indent also with 2 spaces
   set tabstop=2 " tab width is 2 spaces
 
+  set ignorecase " ignore case by default
+  set incsearch " search as I type
   set hlsearch  " highlight search results
   set showmatch " highlight matching braces
-  syntax enable " If the terminal supports colors, then turn on syntax highligting.
+  syntax enable " if the terminal supports colors, then turn on syntax highligting.
 
   " Send more characters for redraws
    set ttyfast
