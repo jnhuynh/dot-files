@@ -11,6 +11,8 @@ at my `$HOME` directory.
 - vim
 - [vim-pathogen](https://github.com/tpope/vim-pathogen)
 - git
+- [nvm](https://github.com/creationix/nvm)
+- [rbenv](https://github.com/sstephenson/rbenv) and [ruby-build](https://github.com/sstephenson/ruby-build)
 
 # Usage
 
