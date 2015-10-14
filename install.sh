@@ -50,5 +50,10 @@ done
 cd ../../
 
 echo
+echo "--- Setting up Tmux ---"
+echo "Creating a symbolic link for .tmux.conf"
+ln -Ffhs $SCRIPTPATH/tmux.conf $HOME/.tmux.conf
+
+echo
 echo "--- Done ---"
 echo
