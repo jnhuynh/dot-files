@@ -13,6 +13,8 @@ at my `$HOME` directory.
 - git
 - [nvm](https://github.com/creationix/nvm)
 - [rbenv](https://github.com/sstephenson/rbenv) and [ruby-build](https://github.com/sstephenson/ruby-build)
+- [tmux](https://tmux.github.io/)
+- [reattach-to-user-namespace](https://github.com/ChrisJohnsen/tmux-MacOSX-pasteboard)
 
 # Usage
 

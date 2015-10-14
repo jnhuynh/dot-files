@@ -1,4 +1,6 @@
 " General {
+  set clipboard=unnamed " copy paste with yank and put
+
   set nocompatible
   call pathogen#infect()
 
