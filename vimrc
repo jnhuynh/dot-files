@@ -36,13 +36,13 @@
   " Quick Vim split resizing
   " http://vim.wikia.com/wiki/Resize_splits_more_quickly
   " 5 to the left
-  nnoremap <silent> <Leader>h :vertical resize -5<CR>
+  nnoremap <silent> <Leader>wh :vertical resize -10<CR>
   " 5 to the right
-  nnoremap <silent> <Leader>l :vertical resize +5<CR>
+  nnoremap <silent> <Leader>wl :vertical resize +10<CR>
   " 5 to the up
-  nnoremap <silent> <Leader>k :resize -5<CR>
+  nnoremap <silent> <Leader>wk :resize -10<CR>
   " 5 to the down
-  nnoremap <silent> <Leader>j :resize +5<CR>
+  nnoremap <silent> <Leader>wj :resize +10<CR>
 
   " Allows quick reindentation by accessing the last visual mode slection.
   nnoremap <silent> < gv<
