@@ -5,6 +5,14 @@ SCRIPTPATH=`pwd`
 popd > /dev/null
 
 echo
+echo "--- Installing Homebrew ---"
+ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+
+echo
+echo "--- Installing ZSH ---"
+sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+
+echo
 echo "--- Setting up ZSH ---"
 echo "Creating a symbolic link for .zshrc"
 ln -Ffhs $SCRIPTPATH/zshrc $HOME/.zshrc
@@ -24,11 +32,27 @@ done
 cd ../../
 
 echo
+echo "--- Setting up Powerline fonts ---"
+git clone git@github.com:powerline/fonts.git
+pushd fonts > /dev/null
+./install.sh
+popd > /dev/null
+rm -rf fonts
+
+echo
+echo "--- Installing Git ---"
+brew install git
+
+echo
 echo "--- Setting up Git ---"
 echo "Creating a symbolic link for .gitconfig"
 ln -ffhs $SCRIPTPATH/gitconfig $HOME/.gitconfig
 echo "Creating a symbolic link for .gitignore_global"
 ln -ffhs $SCRIPTPATH/gitignore_global $HOME/.gitignore_global
+
+echo
+echo "--- Installing Vim ---"
+brew install vim
 
 echo
 echo "--- Setting up Vim ---"
@@ -48,6 +72,10 @@ while read line;
   do git clone $line;
 done
 cd ../../
+
+echo
+echo "--- Installing Tmux ---"
+brew install tmux
 
 echo
 echo "--- Setting up Tmux ---"
