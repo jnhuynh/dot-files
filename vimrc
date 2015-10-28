@@ -12,6 +12,8 @@
   set shiftwidth=2 " indent also with 2 spaces
   set tabstop=2 " tab width is 2 spaces
 
+  set backspace=indent,eol,start " enabling erasing previous entered characters in insert mode
+
   set ignorecase " ignore case by default
   set incsearch " search as I type
   set hlsearch  " highlight search results
