@@ -83,5 +83,9 @@ echo "Creating a symbolic link for .tmux.conf"
 ln -Ffhs $SCRIPTPATH/tmux.conf $HOME/.tmux.conf
 
 echo
+echo "--- Installing Ack ---"
+brew install ack
+
+echo
 echo "--- Done ---"
 echo

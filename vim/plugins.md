@@ -9,3 +9,4 @@ git@github.com:pangloss/vim-javascript.git
 git@github.com:plasticboy/vim-markdown.git
 git@github.com:mustache/vim-mustache-handlebars.git
 git@github.com:tpope/vim-surround.git
+git@github.com:mileszs/ack.vim.git
