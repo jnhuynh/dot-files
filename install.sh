@@ -51,6 +51,10 @@ echo "Creating a symbolic link for .gitignore_global"
 ln -ffhs $SCRIPTPATH/gitignore_global $HOME/.gitignore_global
 
 echo
+echo "--- Installing Hub ---"
+brew install hub
+
+echo
 echo "--- Installing Vim ---"
 brew install vim
 
