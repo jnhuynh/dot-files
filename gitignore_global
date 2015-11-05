@@ -11,7 +11,11 @@
 _site
 _drafts
 _deploy
+
+# Greenbits #
+############
 vendor
+.bin
 
 # Packages #
 ############
