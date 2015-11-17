@@ -10,3 +10,7 @@ git@github.com:plasticboy/vim-markdown.git
 git@github.com:mustache/vim-mustache-handlebars.git
 git@github.com:tpope/vim-surround.git
 git@github.com:mileszs/ack.vim.git
+git@github.com:heartsentwined/vim-emblem.git
+git@github.com:kchmck/vim-coffee-script.git
+git@github.com:othree/yajs.vim.git
+git@github.com:othree/javascript-libraries-syntax.vim.git
