@@ -64,14 +64,16 @@
   set background=dark
   colorscheme solarized
 
-  set cursorcolumn " hilight the current column
-  set cursorline " hilight the current line
+  set cursorcolumn " Hilight the current column
+  set cursorline " Hilight the current line
 
-  set list " we do this to show tabs
+  set list " We do this to show tabs
   set lcs=tab:»_,trail:·
 
-  set number " vim will display line numbers
-  set ruler " show column number
+  set relativenumber " Show relative line numbers
+  set number " Show current line number
+
+  set ruler " Show column number
 
   let g:airline_powerline_fonts = 1
 " }
