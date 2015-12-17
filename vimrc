@@ -126,6 +126,13 @@
   set wildignore+=*.so,*.o,*.osx,*.swp,*.zip,binary_files,*vendor*,*tmp*,*node_modules*,*tasks*,*DerivedData*,*bower_components*
 " }
 
-" Vim Markdown{
+" Vim Markdown {
   let g:vim_markdown_folding_disabled=1
+" }
+
+" Tabular {
+  nmap <Leader>t= :Tabularize /=<CR>
+  vmap <Leader>t= :Tabularize /=<CR>
+  nmap <Leader>t: :Tabularize /:\zs<CR>
+  vmap <Leader>t: :Tabularize /:\zs<CR>
 " }

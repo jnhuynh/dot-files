@@ -14,3 +14,4 @@ git@github.com:heartsentwined/vim-emblem.git
 git@github.com:kchmck/vim-coffee-script.git
 git@github.com:othree/yajs.vim.git
 git@github.com:othree/javascript-libraries-syntax.vim.git
+git@github.com:godlygeek/tabular.git
