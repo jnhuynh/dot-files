@@ -15,3 +15,4 @@ git@github.com:kchmck/vim-coffee-script.git
 git@github.com:othree/yajs.vim.git
 git@github.com:othree/javascript-libraries-syntax.vim.git
 git@github.com:godlygeek/tabular.git
+git@github.com:wesQ3/vim-windowswap.git
