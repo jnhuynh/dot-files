@@ -1,4 +1,6 @@
-set guifont=Source\ Code\ Pro\ for\ Powerline:h12
+set guifont=Source\ Code\ Pro\ for\ Powerline:h14
+set guioptions-=r
+set guioptions-=L
 hi Normal guifg=#839496 guibg=#222222 gui=none
 hi Visual guifg=NONE guibg=#757575 gui=none
 hi CursorLine guibg=#333233 gui=none
