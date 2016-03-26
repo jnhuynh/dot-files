@@ -62,6 +62,8 @@ echo
 echo "--- Setting up Vim ---"
 echo "Creating a symbolic link for .vimrc"
 ln -Ffhs $SCRIPTPATH/vimrc $HOME/.vimrc
+echo "Creating a symbolic link for .gvimrc"
+ln -Ffhs $SCRIPTPATH/gvimrc $HOME/.gvimrc
 echo "Creating a symbolic link for .vim"
 ln -Ffhs $SCRIPTPATH/vim $HOME/.vim
 
