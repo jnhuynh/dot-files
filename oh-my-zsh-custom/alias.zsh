@@ -12,6 +12,8 @@ alias trl="tmux resize-pane -L"
 alias trr="tmux resize-pane -R"
 alias tmw="tmux movew"
 
+alias yda="youtube-dl --audio-format mp3 --audio-quality 0 --embed-thumbnail -x -o '~/Downloads/Music/%(title)s.%(ext)s'"
+
 split-default() {
   tmux split-window -v
   tmux swap-pane -D
