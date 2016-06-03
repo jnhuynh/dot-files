@@ -5,6 +5,7 @@ alias reload="source ~/.zshrc"
 alias v="mvim"
 alias be="bundle exec"
 alias bi="bundle install"
+alias bu="bundle update"
 
 alias tru="tmux resize-pane -U"
 alias trd="tmux resize-pane -D"
@@ -16,9 +17,8 @@ alias yda="youtube-dl --audio-format mp3 --audio-quality 0 --embed-thumbnail -x 
 
 split-default() {
   tmux split-window -v
-  tmux swap-pane -D
   tmux resize-pane -D 15
   tmux split-window -h
-  tmux swap-pane -D
-  tmux send-keys 'C-l'
 }
+
+alias sd="split-default"
