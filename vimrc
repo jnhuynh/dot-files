@@ -53,6 +53,8 @@
   " Disables hilight from search.
   nnoremap <silent> <Leader>z :nohl<CR>
 
+  cab a Ack!
+
   " Toggle ignore case when searching, ALT+i
   " http://stackoverflow.com/a/620254
   nnoremap <silent> ˆ :set ignorecase!<CR>
