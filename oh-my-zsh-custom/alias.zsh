@@ -7,6 +7,7 @@ alias be="bundle exec"
 alias bi="bundle install"
 alias bu="bundle update"
 
+alias pod="bi; be pod repo update; be pod install"
 alias hait="mocha --timeout 15000 --compilers js:babel-register"
 
 alias tru="tmux resize-pane -U"
