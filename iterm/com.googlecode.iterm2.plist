@@ -339,10 +339,12 @@
 	<string>542 137 631 393 0 0 1440 877 </string>
 	<key>NSWindow Frame Preferences</key>
 	<string>249 416 606 456 0 0 1440 877 </string>
+	<key>NSWindow Frame SUStatusFrame</key>
+	<string>365 560 400 129 0 0 1440 877 </string>
 	<key>NSWindow Frame SUUpdateAlert</key>
-	<string>524 136 620 392 0 0 1440 900 </string>
+	<string>412 381 620 392 0 0 1440 900 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>0 0 1438 877 0 0 1440 877 </string>
+	<string>4 425 570 452 0 0 1440 877 </string>
 	<key>NSWindow Frame iTerm Window 1</key>
 	<string>449 350 570 473 0 0 1920 1057 </string>
 	<key>New Bookmarks</key>
@@ -1164,6 +1166,8 @@
 			<string>/Users/jhuynh</string>
 		</dict>
 	</array>
+	<key>NoSyncConfirmBeta</key>
+	<true/>
 	<key>NoSyncDoNotWarnBeforeMultilinePaste</key>
 	<true/>
 	<key>NoSyncDoNotWarnBeforeMultilinePaste_selection</key>
@@ -1177,7 +1181,7 @@
 	<key>NoSyncInstallationId</key>
 	<string>F2F5B020-D1C0-4725-8C24-CAFCF636F595</string>
 	<key>NoSyncLastTipTime</key>
-	<real>487973788.38670802</real>
+	<real>489683858.521415</real>
 	<key>NoSyncNeverRemindPrefsChangesCopy</key>
 	<true/>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile</key>
@@ -1203,6 +1207,22 @@
 		<string>0005</string>
 		<string>0006</string>
 		<string>0007</string>
+		<string>0008</string>
+		<string>0009</string>
+		<string>0010</string>
+		<string>0011</string>
+		<string>0012</string>
+		<string>0013</string>
+		<string>0014</string>
+		<string>0015</string>
+		<string>0016</string>
+		<string>0017</string>
+		<string>0018</string>
+		<string>0019</string>
+		<string>0020</string>
+		<string>0021</string>
+		<string>0022</string>
+		<string>0023</string>
 	</array>
 	<key>OnlyWhenMoreTabs</key>
 	<true/>
@@ -1230,6 +1250,8 @@
 	</dict>
 	<key>PrefsCustomFolder</key>
 	<string>/Users/jnhuynh/Development/github.com/jnhuynh/dot-files/iterm</string>
+	<key>Print In Black And White</key>
+	<true/>
 	<key>PromptOnQuit</key>
 	<true/>
 	<key>QuitWhenAllWindowsClosed</key>
@@ -1249,7 +1271,7 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2016-06-19T16:56:15Z</date>
+	<date>2016-07-06T21:03:17Z</date>
 	<key>SavePasteHistory</key>
 	<false/>
 	<key>ShowBookmarkName</key>
@@ -1301,6 +1323,6 @@
 	<key>findRegex_iTerm</key>
 	<false/>
 	<key>iTerm Version</key>
-	<string>3.0.0</string>
+	<string>3.0.4</string>
 </dict>
 </plist>
