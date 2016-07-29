@@ -17,3 +17,4 @@ git@github.com:othree/javascript-libraries-syntax.vim.git
 git@github.com:godlygeek/tabular.git
 git@github.com:wesQ3/vim-windowswap.git
 git@github.com:tpope/vim-fugitive.git
+git@github.com:scrooloose/syntastic.git
