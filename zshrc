@@ -85,3 +85,5 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
+# Setup thefuck
+eval "$(thefuck --alias fuck)"
