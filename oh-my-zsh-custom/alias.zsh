@@ -1,13 +1,16 @@
+alias reload="source ~/.zshrc"
+
 alias ls="ls -FGh"
 alias ll="ls -l -FGh"
 alias la="ls -la -FGh"
-alias reload="source ~/.zshrc"
+
 alias v="mvim"
+
 alias be="bundle exec"
 alias bi="bundle install"
 alias bu="bundle update"
 
-alias podui="bi; be pod repo update; be pod install"
+alias pui="bi; be pod repo update; be pod install"
 alias mt="mocha --timeout 15000 --compilers js:babel-register"
 
 alias tru="tmux resize-pane -U"
