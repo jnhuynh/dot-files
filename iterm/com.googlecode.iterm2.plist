@@ -324,7 +324,7 @@
 		BAtzdHJlYW10eXBlZIHoA4QBQISEhAhOU1N0cmluZwGEhAhOU09iamVjdACF
 		hAErATGG
 		</data>
-		<string>322</string>
+		<string>307</string>
 	</array>
 	<key>NSTableView Hidden Columns KeyBingingTable</key>
 	<array/>
@@ -340,11 +340,13 @@
 	<key>NSWindow Frame Preferences</key>
 	<string>249 416 606 456 0 0 1440 877 </string>
 	<key>NSWindow Frame SUStatusFrame</key>
-	<string>365 560 400 129 0 0 1440 877 </string>
+	<string>522 561 400 129 0 0 1440 877 </string>
 	<key>NSWindow Frame SUUpdateAlert</key>
 	<string>412 381 620 392 0 0 1440 900 </string>
+	<key>NSWindow Frame SharedPreferences</key>
+	<string>269 175 796 473 0 0 1440 900 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>4 425 570 452 0 0 1440 877 </string>
+	<string>0 0 717 877 0 0 1920 1057 </string>
 	<key>NSWindow Frame iTerm Window 1</key>
 	<string>449 350 570 473 0 0 1920 1057 </string>
 	<key>New Bookmarks</key>
@@ -1181,7 +1183,7 @@
 	<key>NoSyncInstallationId</key>
 	<string>F2F5B020-D1C0-4725-8C24-CAFCF636F595</string>
 	<key>NoSyncLastTipTime</key>
-	<real>489683858.521415</real>
+	<real>490748375.42626601</real>
 	<key>NoSyncNeverRemindPrefsChangesCopy</key>
 	<true/>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile</key>
@@ -1223,6 +1225,17 @@
 		<string>0021</string>
 		<string>0022</string>
 		<string>0023</string>
+		<string>0024</string>
+		<string>0025</string>
+		<string>0026</string>
+		<string>0027</string>
+		<string>0028</string>
+		<string>0029</string>
+		<string>0030</string>
+		<string>0031</string>
+		<string>0032</string>
+		<string>0033</string>
+		<string>0034</string>
 	</array>
 	<key>OnlyWhenMoreTabs</key>
 	<true/>
@@ -1271,7 +1284,7 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2016-07-06T21:03:17Z</date>
+	<date>2016-07-20T19:19:29Z</date>
 	<key>SavePasteHistory</key>
 	<false/>
 	<key>ShowBookmarkName</key>
@@ -1317,12 +1330,12 @@
 	<key>WindowStyle</key>
 	<integer>0</integer>
 	<key>WordCharacters</key>
-	<string>/-+\~_.</string>
+	<string></string>
 	<key>findIgnoreCase_iTerm</key>
 	<true/>
 	<key>findRegex_iTerm</key>
 	<false/>
 	<key>iTerm Version</key>
-	<string>3.0.4</string>
+	<string>3.0.5</string>
 </dict>
 </plist>
