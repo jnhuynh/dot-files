@@ -204,5 +204,4 @@ prompt_newline() {
   prompt_end
 }
 
-PROMPT='%{%f%b%k%}$(build_prompt)
-$(prompt_newline) '
+PROMPT='%{%f%b%k%}$(build_prompt) '
