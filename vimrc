@@ -54,7 +54,7 @@
   nnoremap <silent> <Leader>z :nohl<CR>
 
   cab a Ack!
-  cab gb Gblame
+  " cab gb Gblame
 
   " Toggle ignore case when searching, ALT+i
   " http://stackoverflow.com/a/620254
