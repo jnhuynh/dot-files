@@ -61,7 +61,6 @@
   nnoremap <silent> ˆ :set ignorecase!<CR>
 " }
 
-
 " UI {
   let g:solarized_termcolors=256
   set background=dark
@@ -142,14 +141,19 @@
 " }
 
 " Syntastic {
-set statusline+=%#warningmsg#
-set statusline+=%{SyntasticStatuslineFlag()}
-set statusline+=%*
+  set statusline+=%#warningmsg#
+  set statusline+=%{SyntasticStatuslineFlag()}
+  set statusline+=%*
 
-let g:syntastic_always_populate_loc_list = 1
-let g:syntastic_auto_loc_list = 1
-let g:syntastic_check_on_open = 0
-let g:syntastic_check_on_wq = 0
-let g:syntastic_ruby_checkers = ['rubocop']
-let g:syntastic_ruby_rubocop_exec = '/Users/jnhuynh/.rbenv/shims/rubocop'
+  let g:syntastic_always_populate_loc_list = 1
+  let g:syntastic_auto_loc_list = 1
+  let g:syntastic_check_on_open = 0
+  let g:syntastic_check_on_wq = 0
+  let g:syntastic_ruby_checkers = ['rubocop']
+  let g:syntastic_ruby_rubocop_exec = '/Users/jnhuynh/.rbenv/shims/rubocop'
+  let g:syntastic_javascript_checkers = ['eslint']
+" }
+
+" Javascript Libraries Syntax {
+  let g:used_javascript_libs = 'jquery,underscore,react'
 " }
