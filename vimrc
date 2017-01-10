@@ -77,6 +77,8 @@
 
   set ruler " Show column number
 
+  set colorcolumn=100 " Show vertical column for line wrap
+
   set laststatus=2
   let g:airline_powerline_fonts = 1
 " }
