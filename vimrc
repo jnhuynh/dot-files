@@ -151,7 +151,7 @@
   let g:syntastic_check_on_wq = 0
   let g:syntastic_ruby_checkers = ['rubocop']
   let g:syntastic_ruby_rubocop_exec = '/Users/jnhuynh/.rbenv/shims/rubocop'
-  let g:syntastic_javascript_checkers = ['eslint']
+  " let g:syntastic_javascript_checkers = ['eslint']
 " }
 
 " Javascript Libraries Syntax {
