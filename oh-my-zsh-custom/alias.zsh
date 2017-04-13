@@ -28,3 +28,6 @@ split-default() {
 }
 
 alias sd="split-default"
+
+alias todo="jrnl todo"
+alias todone="jrnl todo --edit"
