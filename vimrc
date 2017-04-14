@@ -79,8 +79,8 @@
 
   set colorcolumn=100 " Show vertical column for line wrap
 
-  set textwidth=100 " Set text wrap to 100
-  set wrap linebreak nolist " Softwrap long lines
+  " set textwidth=100 " Set text wrap to 100
+  " set wrap linebreak nolist " Softwrap long lines
 
   set laststatus=2
   let g:airline_powerline_fonts = 1
