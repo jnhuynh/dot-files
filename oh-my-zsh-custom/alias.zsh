@@ -29,5 +29,10 @@ split-default() {
 
 alias sd="split-default"
 
-alias todo="jrnl todo"
-alias todone="jrnl todo --edit"
+alias jl="jrnl"
+alias jle="jrnl --edit"
+alias jls="jrnl-show"
+
+jrnl-show() {
+  jrnl $1 -10
+}
