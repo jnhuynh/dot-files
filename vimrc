@@ -131,7 +131,7 @@
 " }
 
 " CTRL+P configuration {
-  set wildignore+=*.so,*.o,*.osx,*.swp,*.zip,binary_files/,*vendor/*,*tmp/*,*node_modules/*,*DerivedData/*,*bower_components/*
+  set wildignore+=*.so,*.o,*.osx,*.swp,*.zip,binary_files/,*vendor/*,*tmp/*,*node_modules/*,*DerivedData/*,*bower_components/*,*android/app/build/*
 " }
 
 " Vim Markdown {
