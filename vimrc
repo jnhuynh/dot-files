@@ -146,6 +146,8 @@
 " }
 
 " Syntastic {
+  " Toggle Syntastic
+  nmap <Leader>stm :SyntasticToggleMode<CR>
   set statusline+=%#warningmsg#
   set statusline+=%{SyntasticStatuslineFlag()}
   set statusline+=%*

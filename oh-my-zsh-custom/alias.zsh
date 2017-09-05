@@ -32,6 +32,8 @@ alias jl="jrnl"
 alias jle="jrnl --edit"
 alias jls="jrnl-show"
 
+alias ip="curl ipv4.icanhazip.com"
+
 jrnl-show() {
   jrnl $1 -10
 }
