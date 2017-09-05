@@ -164,3 +164,11 @@
 " Javascript Libraries Syntax {
   let g:used_javascript_libs = 'jquery,underscore,react'
 " }
+
+" Vim Rspec {
+  let g:rspec_command="bundle exec rspec"
+  map <Leader>c :call RunCurrentSpecFile()<CR>
+  map <Leader>n :call RunNearestSpec()<CR>
+  map <Leader>l :call RunLastSpec()<CR>
+  map <Leader>a :call RunAllSpecs()<CR>
+" }
