@@ -166,7 +166,7 @@
 " }
 
 " Vim Rspec {
-  let g:rspec_command="bundle exec rspec"
+  let g:rspec_command="Dispatch bundle exec rspec {spec}"
   map <Leader>c :call RunCurrentSpecFile()<CR>
   map <Leader>n :call RunNearestSpec()<CR>
   map <Leader>l :call RunLastSpec()<CR>
