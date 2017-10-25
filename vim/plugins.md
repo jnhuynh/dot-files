@@ -2,10 +2,11 @@ git@github.com:kien/ctrlp.vim.git
 git@github.com:scrooloose/nerdcommenter.git
 git@github.com:scrooloose/nerdtree.git
 git@github.com:ervandew/supertab.git
-git@github.com:bling/vim-airline.git
+git@github.com:vim-airline/vim-airline.git
 git@github.com:vim-airline/vim-airline-themes.git
 git@github.com:djoshea/vim-autoread.git
 git@github.com:altercation/vim-colors-solarized.git
+git@github.com:albertorestifo/github.vim.git
 git@github.com:tpope/vim-surround.git
 git@github.com:mileszs/ack.vim.git
 git@github.com:godlygeek/tabular.git

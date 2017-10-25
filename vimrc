@@ -62,12 +62,22 @@
 " }
 
 " UI {
-  let g:solarized_termcolors=256
-  set background=dark
-  colorscheme solarized
+  " let g:solarized_termcolors=256
+  " set background=dark
+  " colorscheme solarized
+
+  if $TERM == "xterm-256color"
+    set t_Co=256
+  endif
+
+  set background=light
+  colorscheme github
 
   set cursorcolumn " Hilight the current column
+  hi CursorColumn ctermbg=254
   set cursorline " Hilight the current line
+  hi CursorLine ctermbg=254
+  set colorcolumn=100 " Show vertical column for line wrap
 
   set list " We do this to show tabs
   set lcs=tab:»_,trail:·
@@ -76,8 +86,6 @@
   set number " Show current line number
 
   set ruler " Show column number
-
-  set colorcolumn=100 " Show vertical column for line wrap
 
   " set textwidth=100 " Set text wrap to 100
   " set wrap linebreak nolist " Softwrap long lines
