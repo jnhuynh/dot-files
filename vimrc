@@ -182,3 +182,11 @@
   map <Leader>ls :call RunLastSpec()<CR>
   map <Leader>as :call RunAllSpecs()<CR>
 " }
+
+" Vim Bookmarks {
+highlight BookmarkSign ctermbg=NONE ctermfg=0
+highlight BookmarkLine ctermbg=254 ctermFg=NONE
+highlight SignColumn ctermbg=NONE
+let g:bookmark_sign = '♥'
+let g:bookmark_highlight_lines = 1
+" }
