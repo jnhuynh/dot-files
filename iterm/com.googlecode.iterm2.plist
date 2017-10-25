@@ -644,15 +644,15 @@
 		<integer>1</integer>
 	</dict>
 	<key>NSWindow Frame NSFontPanel</key>
-	<string>1060 338 657 243 0 0 1920 1177 </string>
+	<string>718 159 696 346 0 0 1920 1177 </string>
 	<key>NSWindow Frame SUUpdateAlert</key>
 	<string>652 588 620 392 0 0 1920 1177 </string>
 	<key>NSWindow Frame SharedPreferences</key>
-	<string>931 589 796 473 0 0 1920 1177 </string>
+	<string>601 344 796 473 0 0 1920 1177 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
 	<string>0 0 955 1177 0 0 1920 1177 </string>
 	<key>NSWindow Frame iTerm Window 1</key>
-	<string>0 0 1916 1177 0 0 1920 1177 </string>
+	<string>4 751 570 426 0 0 1920 1177 </string>
 	<key>New Bookmarks</key>
 	<array>
 		<dict>
@@ -764,13 +764,13 @@
 				<key>Alpha Component</key>
 				<real>1</real>
 				<key>Blue Component</key>
-				<real>0.6768035888671875</real>
+				<real>0.26540845865383744</real>
 				<key>Color Space</key>
 				<string>sRGB</string>
 				<key>Green Component</key>
-				<real>0.92827339738004722</real>
+				<real>0.77326549427897662</real>
 				<key>Red Component</key>
-				<real>1</real>
+				<real>0.918121337890625</real>
 			</dict>
 			<key>Ansi 4 Color</key>
 			<dict>
@@ -836,12 +836,16 @@
 			<false/>
 			<key>Background Color</key>
 			<dict>
+				<key>Alpha Component</key>
+				<real>1</real>
 				<key>Blue Component</key>
-				<real>0.95686274766921997</real>
+				<real>1</real>
+				<key>Color Space</key>
+				<string>sRGB</string>
 				<key>Green Component</key>
-				<real>0.95686274766921997</real>
+				<real>1</real>
 				<key>Red Component</key>
-				<real>0.95686274766921997</real>
+				<real>0.99999600648880005</real>
 			</dict>
 			<key>Background Image Is Tiled</key>
 			<false/>
@@ -1366,7 +1370,7 @@
 			<key>Non-ASCII Anti Aliased</key>
 			<true/>
 			<key>Normal Font</key>
-			<string>MesloLGSDZForPowerline-Regular 11</string>
+			<string>MesloLGLForPowerline-Bold 11</string>
 			<key>Option Key Sends</key>
 			<integer>0</integer>
 			<key>Prompt Before Closing 2</key>
@@ -1532,7 +1536,7 @@
 			<key>Use Italic Font</key>
 			<false/>
 			<key>Vertical Spacing</key>
-			<real>1.0128835655120483</real>
+			<real>0.73006282944277123</real>
 			<key>Visual Bell</key>
 			<false/>
 			<key>Window Type</key>
@@ -2423,12 +2427,14 @@
 	<false/>
 	<key>ShowFullScreenTabBar</key>
 	<true/>
+	<key>ShowNewOutputIndicator</key>
+	<true/>
 	<key>ShowPaneTitles</key>
 	<false/>
 	<key>SmartPlacement</key>
 	<false/>
 	<key>SplitPaneDimmingAmount</key>
-	<real>0.37605419754981995</real>
+	<real>0.32579877804487178</real>
 	<key>SwitchTabModifier</key>
 	<integer>4</integer>
 	<key>SwitchWindowModifier</key>
