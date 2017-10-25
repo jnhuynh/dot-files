@@ -98,9 +98,9 @@ prompt_git() {
     dirty=$(parse_git_dirty)
     ref=$(git symbolic-ref HEAD 2> /dev/null) || ref="➦ $(git rev-parse --short HEAD 2> /dev/null)"
     if [[ -n $dirty ]]; then
-      prompt_segment yellow black
+      prompt_segment black white
     else
-      prompt_segment green black
+      prompt_segment black white
     fi
 
     if [[ -e "${repo_path}/BISECT_LOG" ]]; then
@@ -163,7 +163,7 @@ prompt_hg() {
 
 # Dir: current working directory
 prompt_dir() {
-  prompt_segment cyan black ${PWD##*/}
+  prompt_segment red white ${bold}${PWD##*/}
 }
 
 # Virtualenv: current working virtualenv
