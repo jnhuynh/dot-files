@@ -150,8 +150,9 @@
 " Tabular {
   nmap <Leader>t= :Tabularize /=<CR>
   vmap <Leader>t= :Tabularize /=<CR>
-  nmap <Leader>t: :Tabularize /:\zs<CR>
-  vmap <Leader>t: :Tabularize /:\zs<CR>
+  " Prevent double space after colon
+  nmap <Leader>t: :Tabularize /:\zs/l0r1<CR>
+  vmap <Leader>t: :Tabularize /:\zs/l0r1<CR>
 " }
 
 " " Syntastic {
