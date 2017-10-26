@@ -189,4 +189,11 @@ highlight BookmarkLine ctermbg=254 ctermFg=NONE
 highlight SignColumn ctermbg=NONE
 let g:bookmark_sign = '♥'
 let g:bookmark_highlight_lines = 1
+nmap <Leader>mm <Plug>BookmarkToggle
+nmap <Leader>mi <Plug>BookmarkAnnotate
+nmap <Leader>ma <Plug>BookmarkShowAll
+nmap <Leader>mn <Plug>BookmarkNext
+nmap <Leader>mp <Plug>BookmarkPrev
+nmap <Leader>mc <Plug>BookmarkClear
+nmap <Leader>mx <Plug>BookmarkClearAll
 " }
