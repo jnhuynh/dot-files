@@ -19,6 +19,9 @@
   set hlsearch  " highlight search results
   set showmatch " highlight matching braces
   syntax enable " if the terminal supports colors, then turn on syntax highligting.
+  " Use old regex engine so vim is snappy https://stackoverflow.com/a/25276429
+  " Was slow due to ruby syntax highlight matching regex.
+  set re=1
 
   " Send more characters for redraws
    set ttyfast
