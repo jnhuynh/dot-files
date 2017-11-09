@@ -1,3 +1,7 @@
+# XCode #
+###################
+*.xcworkspace/xcshareddata/WorkspaceSettings.xcsettings
+
 # Compiled source #
 ###################
 *.com
