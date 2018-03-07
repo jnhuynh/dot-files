@@ -19,6 +19,11 @@ alias trr="tmux resize-pane -R"
 alias tmw="tmux movew"
 
 alias yda="youtube-dl --audio-format mp3 --audio-quality 0 --embed-thumbnail -x -o '~/Desktop/Music/%(title)s.%(ext)s'"
+alias ydv="youtube-dl --audio-quality 0 -o '~/Desktop/Music/%(title)s.%(ext)s'"
+
+convert-mov-mp4() {
+  ffmpeg -i $1 -vcodec copy -acodec copy $2
+}
 
 split-default() {
   tmux split-window -v
@@ -28,12 +33,13 @@ split-default() {
 
 alias sd="split-default"
 
-alias jl="jrnl"
-alias jle="jrnl --edit"
-alias jls="jrnl-show"
-
 alias ip="curl ipv4.icanhazip.com"
 
-jrnl-show() {
-  jrnl $1 -10
-}
+alias kill-simulator="launchctl remove com.apple.CoreSimulator.CoreSimulatorService"
+
+# alias jl="jrnl"
+# alias jle="jrnl --edit"
+# alias jls="jrnl-show"
+# jrnl-show() {
+#   jrnl $1 -10
+# }
