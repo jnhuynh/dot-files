@@ -15,6 +15,4 @@ git@github.com:tpope/vim-fugitive.git
 git@github.com:scrooloose/syntastic.git
 git@github.com:sheerun/vim-polyglot.git
 git@github.com:othree/javascript-libraries-syntax.vim.git
-git@github.com:thoughtbot/vim-rspec.git
-git@github.com:tpope/vim-dispatch.git
 git@github.com:MattesGroeger/vim-bookmarks.git
