@@ -1,3 +1,4 @@
+git@github.com:w0rp/ale.git
 git@github.com:kien/ctrlp.vim.git
 git@github.com:scrooloose/nerdcommenter.git
 git@github.com:scrooloose/nerdtree.git
@@ -12,7 +13,7 @@ git@github.com:mileszs/ack.vim.git
 git@github.com:godlygeek/tabular.git
 git@github.com:wesQ3/vim-windowswap.git
 git@github.com:tpope/vim-fugitive.git
-git@github.com:scrooloose/syntastic.git
 git@github.com:sheerun/vim-polyglot.git
 git@github.com:othree/javascript-libraries-syntax.vim.git
 git@github.com:MattesGroeger/vim-bookmarks.git
+git@github.com:mhinz/vim-startify.git
