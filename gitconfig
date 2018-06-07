@@ -20,7 +20,7 @@
   df   = diff --word-diff=color
   fh   = fetch --prune
   lg   = log --pretty=format:\"%Cred%h%Creset - %an, %ar : %Cgreen%s\" --abbrev-commit
-  pf   = "!git pull; git fh"
+  pf   = "!git fh; git pull"
   pl   = pull --rebase
   ph   = push
   st   = status -sb
