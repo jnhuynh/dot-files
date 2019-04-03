@@ -17,3 +17,4 @@ git@github.com:sheerun/vim-polyglot.git
 git@github.com:othree/javascript-libraries-syntax.vim.git
 git@github.com:MattesGroeger/vim-bookmarks.git
 git@github.com:mhinz/vim-startify.git
+git@github.com:dart-lang/dart-vim-plugin.git

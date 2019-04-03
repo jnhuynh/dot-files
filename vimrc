@@ -56,7 +56,7 @@
   " Disables hilight from search.
   nnoremap <silent> <Leader>z :nohl<CR>
 
-  cab a Ack!
+  cab ack Ack!
   " cab gb Gblame
 
   " Toggle ignore case when searching, ALT+i
