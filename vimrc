@@ -1,5 +1,13 @@
 " General {
-  set clipboard=unnamed " copy paste with yank and put
+  " set clipboard=unnamedplus " copy paste with yank and put
+  " yank to clipboard
+  if has("clipboard")
+    set clipboard=unnamed " copy to the system clipboard
+
+    if has("unnamedplus") " X11 support
+      set clipboard+=unnamedplus
+    endif
+  endif
 
   set nocompatible
   call pathogen#infect()
