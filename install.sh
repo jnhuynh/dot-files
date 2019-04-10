@@ -79,14 +79,18 @@ while read line;
 done
 cd ../../
 
-echo
-echo "--- Installing Tmux ---"
-brew install tmux
+# echo
+# echo "--- Installing Tmux ---"
+# brew install tmux
+
+# echo
+# echo "--- Setting up Tmux ---"
+# echo "Creating a symbolic link for .tmux.conf"
+# ln -Ffhs $SCRIPTPATH/tmux.conf $HOME/.tmux.conf
 
 echo
-echo "--- Setting up Tmux ---"
-echo "Creating a symbolic link for .tmux.conf"
-ln -Ffhs $SCRIPTPATH/tmux.conf $HOME/.tmux.conf
+echo "--- Installing pv ---"
+brew install pv
 
 echo
 echo "--- Installing Ack ---"

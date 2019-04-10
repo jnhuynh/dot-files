@@ -12,6 +12,8 @@ alias bu="bundle update"
 
 alias mt="mocha --timeout 15000 --compilers js:babel-register"
 
+alias pvp="pv --progress --timer --rate --bytes"
+
 alias tru="tmux resize-pane -U"
 alias trd="tmux resize-pane -D"
 alias trl="tmux resize-pane -L"
