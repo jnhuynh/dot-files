@@ -1,0 +1,10 @@
+--ignore-dir=.bin
+--ignore-dir=tmp
+--ignore-dir=node_modules
+--ignore-dir=bower_components
+--ignore-dir=dist
+--ignore-dir=vendor
+--ignore-dir=log
+--ignore-dir=.sass-cache
+--ignore-dir=coverage
+--ignore-dir=spec/cassettes
