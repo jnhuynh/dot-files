@@ -81,14 +81,16 @@
     set t_Co=256
   endif
 
-  set background=light
-  colorscheme github
+  " set background=light
+  " colorscheme github
+  " colorscheme dracula
 
   set cursorcolumn " Hilight the current column
-  hi CursorColumn ctermbg=254
+  hi CursorColumn cterm=bold ctermbg=240
   set cursorline " Hilight the current line
-  hi CursorLine ctermbg=254
+  hi CursorLine cterm=bold ctermbg=240
   set colorcolumn=100 " Show vertical column for line wrap
+  hi ColorColumn cterm=bold ctermbg=240
 
   set list " We do this to show tabs
   set lcs=tab:»_,trail:·
