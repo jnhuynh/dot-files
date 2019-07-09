@@ -39,6 +39,24 @@ alias ip="curl ipv4.icanhazip.com"
 
 alias kill-simulator="launchctl remove com.apple.CoreSimulator.CoreSimulatorService"
 
+# Toxi Proxy
+alias toxi="toxiproxy-cli"
+toxi-add-lat() {
+  toxiproxy-cli t add $1 --toxicName latency --type latency --attribute=latency=$2 --attribute=jitter=$3
+}
+toxi-add-timeout() {
+  toxiproxy-cli t add $1 --toxicName timeout --type timeout --attribute=timeout=100000
+}
+toxi-rem() {
+  toxiproxy-cli t remove $1 --toxicName $2
+}
+
+# Ghost Script PDF
+#
+# Source:
+# https://stackoverflow.com/questions/4695695/convert-pdf-to-jpg-or-png-using-c-sharp-or-command-line
+alias pdf-to-png="gs -dBATCH -dNOPAUSE -sDEVICE=pnggray -r300 -dUseCropBox -sOutputFile=item-%03d.png"
+
 # alias jl="jrnl"
 # alias jle="jrnl --edit"
 # alias jls="jrnl-show"
