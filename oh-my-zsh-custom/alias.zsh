@@ -51,6 +51,11 @@ toxi-rem() {
   toxiproxy-cli t remove $1 --toxicName $2
 }
 
+# Compress
+tar-it() {
+  tar -cz $1 | pv --progress --timer --rate --bytes > $1.tar.gz
+}
+
 # Ghost Script PDF
 #
 # Source:
