@@ -181,7 +181,6 @@
 " }
 
 " Ale {
-
 " }
 
 " " Syntastic {

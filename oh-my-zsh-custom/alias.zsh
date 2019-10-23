@@ -5,6 +5,7 @@ alias ll="ls -l -FGh"
 alias la="ls -la -FGh"
 
 alias v="vim"
+alias vs="open -a  /Applications/Visual\ Studio\ Code.app"
 
 alias be="bundle exec"
 alias bi="bundle install"
