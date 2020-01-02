@@ -1,3 +1,9 @@
+# VSCode #
+###################
+*.classpath
+*.project
+*.settings
+
 # XCode #
 ###################
 *.xcworkspace/xcshareddata/WorkspaceSettings.xcsettings
