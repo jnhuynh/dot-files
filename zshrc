@@ -49,7 +49,7 @@ ZSH_CUSTOM=~/.oh-my-zsh-custom
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(bower colorized-man ember-cli git jump node npm tmux zsh-syntax-highlighting zsh-autosuggestions)
+plugins=(bower colored-man-pages ember-cli git jump node npm zsh-syntax-highlighting zsh-autosuggestions)
 
 # User configuration
 
