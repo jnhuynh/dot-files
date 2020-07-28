@@ -11,4 +11,5 @@ export PATH=$PATH:$ANDROID_HOME/platform-tools
 
 export REACT_EDITOR=vim
 
-export PATH=$PATH:~/Documents/flutter/bin
+FLUTTER_HOME=~/Documents/flutter
+export PATH=$FLUTTER_HOME/bin:$FLUTTER_HOME/bin/cache/dart-sdk/bin:$HOME/.pub-cache/bin:$PATH
