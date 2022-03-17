@@ -1,5 +1,6 @@
 alias reload="source ~/.zshrc"
 
+alias hack="ack --ignore-dir=.bin --ignore-dir=spec --ignore-dir=vendor --ignore-dir=coverage --ignore-dir=tmp -i"
 alias ls="ls -FGh"
 alias ll="ls -l -FGh"
 alias la="ls -la -FGh"
@@ -69,3 +70,6 @@ alias pdf-to-png="gs -dBATCH -dNOPAUSE -sDEVICE=pnggray -r300 -dUseCropBox -sOut
 # jrnl-show() {
 #   jrnl $1 -10
 # }
+
+# Dev Chrome
+alias devChrome="open /Applications/Google\ Chrome.app --args --user-data-dir="/var/tmp/Chrome dev session" --disable-web-security"
