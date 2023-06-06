@@ -30,8 +30,12 @@
   sts  = stash save --keep-index
   stp  = stash pop
   stl  = stash list
-  pr  = "!function f { git pull-request -o -r $1; }; f"
-  site = "!hub browse"
+  # pr  = "!function f { git pull-request -o -r $1; };", moved on from hub
+  # pr = "gh pr create --base main ", does not work with git
+  pr  = "!function f { gh pr create --base main $1; }; f"
+  # site = "!hub browse", moved on from hub
+  # site = "gh repo view --web", does not work with git
+  site  = "!function f { gh repo view --web; }; f"
   # Bash function idea from http://stackoverflow.com/a/3322412
   sta  = "!function f { git stash apply stash@{$1}; }; f"
   std  = "!function f { git stash drop stash@{$1}; }; f"
@@ -48,6 +52,6 @@
 [credential]
   helper = osxkeychain
 [pull]
-	rebase = true
+  rebase = true
 [init]
-	defaultBranch = main
+  defaultBranch = main

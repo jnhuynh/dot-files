@@ -1,5 +1,6 @@
 ulimit -n 2560
-eval "$(hub alias -s)"
+# Disabling hub. Migrating to cli.github
+# eval "$(hub alias -s)"
 export PATH=".bin:/Users/jnhuynh/.dot-files/bin:/usr/local/sbin:$PATH"
 export PATH="$PATH:$HOME/.pub-cache/bin"
 
