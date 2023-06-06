@@ -9,6 +9,9 @@ export PATH=$PATH:$ANDROID_HOME/tools
 export PATH=$PATH:$ANDROID_HOME/tools/bin
 export PATH=$PATH:$ANDROID_HOME/platform-tools
 
+# For yarn & node-gyp
+export PYTHON=/usr/local/bin/python3
+
 export REACT_EDITOR=vim
 
 FLUTTER_HOME=~/Documents/flutter
