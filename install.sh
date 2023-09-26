@@ -6,11 +6,11 @@ popd > /dev/null
 
 echo
 echo "--- Installing Homebrew ---"
-/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 
 echo
 echo "--- Installing ZSH ---"
-sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 
 echo
 echo "--- Setting up ZSH ---"
@@ -52,7 +52,7 @@ ln -ffhs $SCRIPTPATH/gitignore_global $HOME/.gitignore_global
 
 echo
 echo "--- Installing Hub ---"
-brew install hub
+brew install gh
 
 echo
 echo "--- Installing Vim ---"
@@ -62,22 +62,20 @@ echo
 echo "--- Setting up Vim ---"
 echo "Creating a symbolic link for .vimrc"
 ln -Ffhs $SCRIPTPATH/vimrc $HOME/.vimrc
-echo "Creating a symbolic link for .gvimrc"
-ln -Ffhs $SCRIPTPATH/gvimrc $HOME/.gvimrc
 echo "Creating a symbolic link for .vim"
 ln -Ffhs $SCRIPTPATH/vim $HOME/.vim
 
-echo
-echo "--- Setting up Vim plugins ---"
-echo "Downloading VIM plugins"
-mkdir -p vim/bundle
+# echo
+# echo "--- Setting up Vim plugins ---"
+# echo "Downloading VIM plugins"
+# mkdir -p vim/bundle
 
-cd vim/bundle
-cat ../plugins.md |
-while read line;
-  do git clone $line;
-done
-cd ../../
+# cd vim/bundle
+# cat ../plugins.md |
+# while read line;
+#   do git clone $line;
+# done
+# cd ../../
 
 # echo
 # echo "--- Installing Tmux ---"
@@ -88,13 +86,13 @@ cd ../../
 # echo "Creating a symbolic link for .tmux.conf"
 # ln -Ffhs $SCRIPTPATH/tmux.conf $HOME/.tmux.conf
 
-echo
-echo "--- Installing pv ---"
-brew install pv
+# echo
+# echo "--- Installing pv ---"
+# brew install pv
 
-echo
-echo "--- Installing Ack ---"
-brew install ack
+# echo
+# echo "--- Installing Ack ---"
+# brew install ack
 
 echo
 echo "--- Done ---"
