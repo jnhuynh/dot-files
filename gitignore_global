@@ -4,6 +4,9 @@
 *.project
 *.settings
 
+# Elixir
+*.elixir_ls
+
 # XCode #
 ###################
 *.xcworkspace/xcshareddata/WorkspaceSettings.xcsettings

@@ -16,4 +16,5 @@ export PYTHON=/usr/local/bin/python3
 export REACT_EDITOR=vim
 
 FLUTTER_HOME=~/Documents/flutter
+FLUTTER_ROOT=~/Documents/flutter
 export PATH=$FLUTTER_HOME/bin:$FLUTTER_HOME/.pub-cache/bin:$FLUTTER_HOME/bin/cache/dart-sdk/bin:$HOME/.pub-cache/bin:$PATH
