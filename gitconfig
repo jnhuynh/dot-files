@@ -42,8 +42,8 @@
   # Branch Searching via http://mislav.uniqpath.com/2010/07/git-tips/
   brs  = branch --contains
 [user]
-  name = John Huynh
-  email = john@huynh.io
+	name = John Huynh
+	email = john@huynh.io
 [core]
   editor = vim
   excludesfile = ~/.gitignore_global
