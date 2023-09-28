@@ -73,3 +73,6 @@ source $ZSH/oh-my-zsh.sh
 
 # Compilation flags
 # export ARCHFLAGS="-arch x86_64"
+
+# Load asdf for version management
+. /usr/local/opt/asdf/libexec/asdf.sh
