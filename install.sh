@@ -64,6 +64,10 @@ echo
 echo "--- Installing Vim ---"
 brew install vim
 
+# Enable press and hold in VSCode
+# https://stackoverflow.com/questions/39972335/how-do-i-press-and-hold-a-key-and-have-it-repeat-in-vscode
+defaults write com.microsoft.VSCode ApplePressAndHoldEnabled -bool false
+
 echo
 echo "--- Setting up Vim ---"
 echo "Creating a symbolic link for .vimrc"

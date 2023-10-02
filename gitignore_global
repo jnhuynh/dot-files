@@ -3,6 +3,7 @@
 *.classpath
 *.project
 *.settings
+*.vscode
 
 # Elixir
 *.elixir_ls
@@ -72,3 +73,8 @@ Thumbs.db
 #      Ruby Gems     #
 ######################
 .bin
+
+
+#      Yarn          #
+######################
+**/.yarn-integrity
