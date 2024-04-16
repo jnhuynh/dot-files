@@ -73,3 +73,4 @@ alias pdf-to-png="gs -dBATCH -dNOPAUSE -sDEVICE=pnggray -r300 -dUseCropBox -sOut
 
 # Dev Chrome
 alias devChrome="open /Applications/Google\ Chrome.app --args --user-data-dir="/var/tmp/Chrome dev session" --disable-web-security"
+alias rd='rdbg -c --'
