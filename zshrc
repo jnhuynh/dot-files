@@ -56,7 +56,7 @@ plugins=(colored-man-pages jump zsh-syntax-highlighting zsh-autosuggestions)
 
 DEFAULT_USER=jnhuynh
 
-export PATH=$HOME/bin:/usr/local/bin:$PATH
+export PATH=$HOME/bin:$HOME/.pub-cache/bin:$HOME/Work/flutter/bin:/usr/local/bin:$PATH
 # export MANPATH="/usr/local/man:$MANPATH"
 
 source $ZSH/oh-my-zsh.sh
