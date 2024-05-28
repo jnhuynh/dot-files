@@ -35,7 +35,8 @@
   # pr  = "!function f { git pull-request -o -r $1; };", moved on from hub
   # pr = "gh pr create --base main ", does not work with git
   # Expect branch name in format of username/TICKET_ID/type/descriptive-words
-  pr  = "!function f { title=$(git br --show-current | cut -f 2,3,4 -d '/'); gh pr create --base main --title $title $1; }; f"
+  # pr  = "!function f { title=$(git br --show-current | cut -f 2,3,4 -d '/'); gh pr create --base main --title $title $1; }; f"
+  pr  = "!function f { ticket=$(git br --show-current | cut -f 2 -d '/'); type=$(git br --show-current | cut -f 3 -d '/'); description=$(git br --show-current | cut -f 4 -d '/'); gh pr create --base main --title \"[$ticket][$type]: $description\"; }; f"
   # site = "!hub browse", moved on from hub
   # site = "gh repo view --web", does not work with git
   site  = "!function f { gh repo view --web; }; f"
