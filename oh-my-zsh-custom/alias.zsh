@@ -29,13 +29,13 @@ convert-mov-mp4() {
   ffmpeg -i $1 -vcodec copy -acodec copy $2
 }
 
-split-default() {
-  tmux split-window -v
-  tmux resize-pane -D 15
-  tmux split-window -h
-}
+# split-default() {
+#   tmux split-window -v
+#   tmux resize-pane -D 15
+#   tmux split-window -h
+# }
 
-alias sd="split-default"
+# alias sd="split-default"
 
 alias ip="curl ipv4.icanhazip.com"
 

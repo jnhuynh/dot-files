@@ -46,8 +46,8 @@ popd > /dev/null
 rm -rf fonts
 
 echo
-echo "--- Installing Git ---"
-brew install git
+echo "--- Installing Utils ---"
+brew install coreutils curl git
 
 echo
 echo "--- Setting up Git ---"
@@ -102,7 +102,7 @@ ln -Ffhs $SCRIPTPATH/vim $HOME/.vim
 
 # echo
 # echo "--- Installing Ack ---"
-# brew install ack
+brew install ack
 
 echo
 echo "--- Done ---"

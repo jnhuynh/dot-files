@@ -76,4 +76,4 @@ export EDITOR='vim'
 # export ARCHFLAGS="-arch x86_64"
 
 # Load asdf for version management
-. /usr/local/opt/asdf/libexec/asdf.sh
+. "$HOME/.asdf/asdf.sh"
