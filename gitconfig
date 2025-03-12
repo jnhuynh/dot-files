@@ -18,7 +18,10 @@
   co   = checkout
   com  = commit
   # Expect branch name in format of username/TICKET_ID/type/descriptive-words
-  fcom  = "!function f { ticket=$(git br --show-current | cut -f 2 -d '/'); type=$(git br --show-current | cut -f 3 -d '/'); git com -m \"[$ticket][$type] $1\"; }; f"
+  # fcom  = "!function f { ticket=$(git br --show-current | cut -f 2 -d '/'); type=$(git br --show-current | cut -f 3 -d '/'); git com -m \"[$ticket][$type] $1\"; }; f"
+  # Testing out https://commitlint.js.org/#/ style commits
+  # Expect branch name in format of username/type/scope/TICKET_ID
+  fcom  = "!function f { type=$(git br --show-current | cut -f 2 -d '/'); scope=$(git br --show-current | cut -f 3 -d '/'); ticket=$(git br --show-current | cut -f 4 -d '/'); git com -m \"$type($scope): [$ticket] $1\"; }; f"
   df   = diff --word-diff=color
   fh   = fetch --prune
   lg   = log --pretty=format:\"%Cred%h%Creset - %an, %ar : %Cgreen%s\" --abbrev-commit
@@ -36,7 +39,8 @@
   # pr = "gh pr create --base main ", does not work with git
   # Expect branch name in format of username/TICKET_ID/type/descriptive-words
   # pr  = "!function f { title=$(git br --show-current | cut -f 2,3,4 -d '/'); gh pr create --base main --title $title $1; }; f"
-  pr  = "!function f { ticket=$(git br --show-current | cut -f 2 -d '/'); type=$(git br --show-current | cut -f 3 -d '/'); description=$(git br --show-current | cut -f 4 -d '/'); gh pr create --base main --title \"[$ticket][$type]: $description\"; }; f"
+  # pr  = "!function f { ticket=$(git br --show-current | cut -f 2 -d '/'); type=$(git br --show-current | cut -f 3 -d '/'); description=$(git br --show-current | cut -f 4 -d '/'); gh pr create --base main --title \"[$ticket][$type]: $description\"; }; f"
+  pr  = "!function f { type=$(git br --show-current | cut -f 2 -d '/'); scope=$(git br --show-current | cut -f 3 -d '/'); ticket=$(git br --show-current | cut -f 4 -d '/'); gh pr create --base main --title \"$type($scope): [$ticket]\"; }; f"
   # site = "!hub browse", moved on from hub
   # site = "gh repo view --web", does not work with git
   site  = "!function f { gh repo view --web; }; f"
