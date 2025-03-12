@@ -80,3 +80,8 @@ Thumbs.db
 #      Yarn          #
 ######################
 **/.yarn-integrity
+
+
+#      AI            #
+######################
+CLAUDE.md
