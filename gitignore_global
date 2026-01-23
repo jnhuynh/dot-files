@@ -6,6 +6,7 @@
 *.vscode
 
 # Elixir
+######################
 *.elixir_ls
 
 # XCode #
@@ -85,3 +86,9 @@ Thumbs.db
 #      AI            #
 ######################
 CLAUDE.md
+
+#      BMAD          #
+######################
+.bmad/
+.claude/commands/
+.cursor/rules/bmad/

@@ -80,6 +80,7 @@ export EDITOR='vim'
 
 # heroku autocomplete setup
 HEROKU_AC_ZSH_SETUP_PATH=/Users/jnhuynh/Library/Caches/heroku/autocomplete/zsh_setup && test -f $HEROKU_AC_ZSH_SETUP_PATH && source $HEROKU_AC_ZSH_SETUP_PATH;
+
 # pnpm
 export PNPM_HOME="/Users/jnhuynh/Library/pnpm"
 case ":$PATH:" in
@@ -87,3 +88,8 @@ case ":$PATH:" in
   *) export PATH="$PNPM_HOME:$PATH" ;;
 esac
 # pnpm end
+
+# Homebrew
+export PATH="/opt/homebrew/opt/postgresql@17/bin:$PATH"
+export PATH="/opt/homebrew/bin/:$PATH"
+# export PATH="/opt/homebrew/opt/openssl@3.5/bin:$PATH"
