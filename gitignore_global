@@ -85,10 +85,3 @@ Thumbs.db
 
 #      AI            #
 ######################
-CLAUDE.md
-
-#      BMAD          #
-######################
-.bmad/
-.claude/commands/
-.cursor/rules/bmad/
