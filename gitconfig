@@ -22,6 +22,8 @@
   # Testing out https://commitlint.js.org/#/ style commits
   # Expect branch name in format of username/type/scope/TICKET_ID
   fcom  = "!function f { type=$(git br --show-current | cut -f 2 -d '/'); scope=$(git br --show-current | cut -f 3 -d '/'); ticket=$(git br --show-current | cut -f 4 -d '/'); git com -m \"$type($scope): [$ticket] $1\"; }; f"
+  # Expect branch name in format of TICKET-TYPE-SCOPE
+  skcom  = "!function f { type=$(git br --show-current | cut -f 2 -d '-'); scope=$(git br --show-current | cut -f 3- -d '-'); ticket=$(git br --show-current | cut -f 1 -d '-'); git com -m \"$type($scope): [$ticket] $1\"; }; f"
   df   = diff --word-diff=color
   fh   = fetch --prune
   lg   = log --pretty=format:\"%Cred%h%Creset - %an, %ar : %Cgreen%s\" --abbrev-commit
