@@ -93,3 +93,6 @@ esac
 export PATH="/opt/homebrew/opt/postgresql@17/bin:$PATH"
 export PATH="/opt/homebrew/bin/:$PATH"
 # export PATH="/opt/homebrew/opt/openssl@3.5/bin:$PATH"
+
+# Python & IDB
+export PATH="$HOME/.local/bin:$PATH"
