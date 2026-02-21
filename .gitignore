@@ -1,3 +1,4 @@
 vim/bundle
 oh-my-zsh-custom/plugins
 oh-my-zsh-custom/greenbits.zsh
+*exports/credentials*

@@ -96,3 +96,6 @@ export PATH="/opt/homebrew/bin/:$PATH"
 
 # Python & IDB
 export PATH="$HOME/.local/bin:$PATH"
+
+# Private Credentials
+source ~/.exports/credentials
