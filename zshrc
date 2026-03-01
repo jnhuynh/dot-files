@@ -76,7 +76,7 @@ export EDITOR='vim'
 # export ARCHFLAGS="-arch x86_64"
 
 # Load asdf for version management
-. "$HOME/.asdf/asdf.sh"
+# . "$HOME/.asdf/asdf.sh"
 
 # heroku autocomplete setup
 HEROKU_AC_ZSH_SETUP_PATH=/Users/jnhuynh/Library/Caches/heroku/autocomplete/zsh_setup && test -f $HEROKU_AC_ZSH_SETUP_PATH && source $HEROKU_AC_ZSH_SETUP_PATH;
@@ -99,3 +99,5 @@ export PATH="$HOME/.local/bin:$PATH"
 
 # Private Credentials
 source ~/.exports/credentials
+
+eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv zsh)"
