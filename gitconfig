@@ -18,12 +18,12 @@
   co   = checkout
   com  = commit
   # Expect branch name in format of username/TICKET_ID/type/descriptive-words
-  # fcom  = "!function f { ticket=$(git br --show-current | cut -f 2 -d '/'); type=$(git br --show-current | cut -f 3 -d '/'); git com -m \"[$ticket][$type] $1\"; }; f"
+  # fcom  = "!f() { ticket=$(git br --show-current | cut -f 2 -d '/'); type=$(git br --show-current | cut -f 3 -d '/'); git com -m \"[$ticket][$type] $1\"; }; f"
   # Testing out https://commitlint.js.org/#/ style commits
   # Expect branch name in format of username/type/scope/TICKET_ID
-  fcom  = "!function f { type=$(git br --show-current | cut -f 2 -d '/'); scope=$(git br --show-current | cut -f 3 -d '/'); ticket=$(git br --show-current | cut -f 4 -d '/'); git com -m \"$type($scope): [$ticket] $1\"; }; f"
+  fcom  = "!f() { type=$(git br --show-current | cut -f 2 -d '/'); scope=$(git br --show-current | cut -f 3 -d '/'); ticket=$(git br --show-current | cut -f 4 -d '/'); git com -m \"$type($scope): [$ticket] $1\"; }; f"
   # Expect branch name in format of TICKET-TYPE-SCOPE
-  skcom  = "!function f { type=$(git br --show-current | cut -f 2 -d '-'); scope=$(git br --show-current | cut -f 3- -d '-'); ticket=$(git br --show-current | cut -f 1 -d '-'); git com -m \"$type($scope): [$ticket] $1\"; }; f"
+  skcom  = "!f() { type=$(git br --show-current | cut -f 2 -d '-'); scope=$(git br --show-current | cut -f 3- -d '-'); ticket=$(git br --show-current | cut -f 1 -d '-'); git com -m \"$type($scope): [$ticket] $1\"; }; f"
   df   = diff --word-diff=color
   fh   = fetch --prune
   lg   = log --pretty=format:\"%Cred%h%Creset - %an, %ar : %Cgreen%s\" --abbrev-commit
@@ -33,23 +33,24 @@
   st   = status -sb
   sh   = show --word-diff=color
   rb   = rebase -i
-  us   = reset head
+  us   = reset HEAD
+ # us   = restore
   sts  = stash save --keep-index
   stp  = stash pop
   stl  = stash list
-  # pr  = "!function f { git pull-request -o -r $1; };", moved on from hub
+  # pr  = "!f() { git pull-request -o -r $1; };", moved on from hub
   # pr = "gh pr create --base main ", does not work with git
   # Expect branch name in format of username/TICKET_ID/type/descriptive-words
-  # pr  = "!function f { title=$(git br --show-current | cut -f 2,3,4 -d '/'); gh pr create --base main --title $title $1; }; f"
-  # pr  = "!function f { ticket=$(git br --show-current | cut -f 2 -d '/'); type=$(git br --show-current | cut -f 3 -d '/'); description=$(git br --show-current | cut -f 4 -d '/'); gh pr create --base main --title \"[$ticket][$type]: $description\"; }; f"
-  pr  = "!function f { type=$(git br --show-current | cut -f 2 -d '/'); scope=$(git br --show-current | cut -f 3 -d '/'); ticket=$(git br --show-current | cut -f 4 -d '/'); gh pr create --base main --title \"$type($scope): [$ticket]\"; }; f"
-  skpr  = "!function f { type=$(git br --show-current | cut -f 2 -d '-'); scope=$(git br --show-current | cut -f 3- -d '-'); ticket=$(git br --show-current | cut -f 1 -d '-'); gh pr create --base main --title \"$type($scope): [$ticket]\"; }; f"
+  # pr  = "!f() { title=$(git br --show-current | cut -f 2,3,4 -d '/'); gh pr create --base main --title $title $1; }; f"
+  # pr  = "!f() { ticket=$(git br --show-current | cut -f 2 -d '/'); type=$(git br --show-current | cut -f 3 -d '/'); description=$(git br --show-current | cut -f 4 -d '/'); gh pr create --base main --title \"[$ticket][$type]: $description\"; }; f"
+  pr  = "!f() { type=$(git br --show-current | cut -f 2 -d '/'); scope=$(git br --show-current | cut -f 3 -d '/'); ticket=$(git br --show-current | cut -f 4 -d '/'); gh pr create --base main --title \"$type($scope): [$ticket]\"; }; f"
+  skpr  = "!f() { type=$(git br --show-current | cut -f 2 -d '-'); scope=$(git br --show-current | cut -f 3- -d '-'); ticket=$(git br --show-current | cut -f 1 -d '-'); gh pr create --base main --title \"$type($scope): [$ticket]\"; }; f"
   # site = "!hub browse", moved on from hub
   # site = "gh repo view --web", does not work with git
-  site  = "!function f { gh repo view --web; }; f"
+  site  = "!f() { gh repo view --web; }; f"
   # Bash function idea from http://stackoverflow.com/a/3322412
-  sta  = "!function f { git stash apply stash@{$1}; }; f"
-  std  = "!function f { git stash drop stash@{$1}; }; f"
+  sta  = "!f() { git stash apply stash@{$1}; }; f"
+  std  = "!f() { git stash drop stash@{$1}; }; f"
   # Branch Searching via http://mislav.uniqpath.com/2010/07/git-tips/
   brs  = branch --contains
 [user]
@@ -66,3 +67,7 @@
   rebase = true
 [init]
   defaultBranch = main
+[credential "https://github.com"]
+  helper = !/home/linuxbrew/.linuxbrew/bin/gh auth git-credential
+[credential "https://gist.github.com"]
+  helper = !/home/linuxbrew/.linuxbrew/bin/gh auth git-credential
