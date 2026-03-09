@@ -101,12 +101,12 @@ export PATH="/opt/homebrew/bin/:$PATH"
 export PATH="$HOME/.local/bin:$PATH"
 
 # Private Credentials
-source ~/.exports/credentials
+[ -s $HOME/.exports/credentials ] && source $HOME/.exports/credentials
 
-eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv zsh)"
+[ -f /home/linuxbrew/.linuxbrew/bin/brew ] && eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv zsh)"
 
 # OpenClaw Completion
-source "$HOME/.openclaw/completions/openclaw.zsh"
+[ -s "$HOME/.openclaw/completions/openclaw.zsh" ] && source "$HOME/.openclaw/completions/openclaw.zsh"
 
 # bun completions
 [ -s "$HOME/.bun/_bun" ] && source "$HOME/.bun/_bun"
