@@ -114,3 +114,8 @@ export PATH="$HOME/.local/bin:$PATH"
 # Ubuntu
 ## Github push without asking for kay passphrase and no keychain right now
 export SSH_AUTH_SOCK="${XDG_RUNTIME_DIR}/ssh-agent.socket"
+# The following lines have been added by Docker Desktop to enable Docker CLI completions.
+fpath=(/Users/jnhuynh/.docker/completions $fpath)
+autoload -Uz compinit
+compinit
+# End of Docker CLI completions

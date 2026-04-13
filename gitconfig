@@ -17,6 +17,7 @@
   br   = branch
   co   = checkout
   com  = commit
+  wta  = "!f() { git worktree add -b jnhuynh/$1/$2/reset-web $2 origin/main; }; f"
   # Expect branch name in format of username/TICKET_ID/type/descriptive-words
   # fcom  = "!f() { ticket=$(git br --show-current | cut -f 2 -d '/'); type=$(git br --show-current | cut -f 3 -d '/'); git com -m \"[$ticket][$type] $1\"; }; f"
   # Testing out https://commitlint.js.org/#/ style commits
@@ -68,6 +69,8 @@
 [init]
   defaultBranch = main
 [credential "https://github.com"]
-  helper = !/home/linuxbrew/.linuxbrew/bin/gh auth git-credential
+	helper = 
+	helper = !/opt/homebrew/bin/gh auth git-credential
 [credential "https://gist.github.com"]
-  helper = !/home/linuxbrew/.linuxbrew/bin/gh auth git-credential
+	helper = 
+	helper = !/opt/homebrew/bin/gh auth git-credential
