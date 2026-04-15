@@ -199,4 +199,5 @@ prompt_newline() {
   prompt_end
 }
 
-PROMPT='%{%f%b%k%}$(build_prompt) '
+PROMPT='%{%f%b%k%}$(build_prompt)
+%(?.%F{green}.%F{red})❯%f '
